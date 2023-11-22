@@ -13,8 +13,6 @@ Settings
 
 - Editor - Font Ligatures : ```False```
 
-- Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
-
 <br>
 
 Resources 
@@ -35,6 +33,16 @@ Resources
 - Go to File - ```Ctrl``` + ```P```
 
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
+
+
+# Editor
+
+Settings
+
+- Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
+
+
+- Editor - Rules :  ```"editor.rulers": [ 120 ]``` (Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.)
 
 
 
