@@ -57,6 +57,9 @@ Word Wrap
 
 - Editor - Word Wrap - ```off``` (Wraps Lines of Code Based on Visibillity)
 
+Cursor 
+
+- Editor - Curson Blinking - ```Phase``` (Controls the Animation of the Cursor)
 
 <br><br>
 
