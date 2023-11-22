@@ -13,6 +13,9 @@ Settings
 
 - Editor - Font Ligatures : ```False```
 
+- Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
+
+
 Resources 
 
 - [Coding Fonts](https://coding-fonts.netlify.app/)
