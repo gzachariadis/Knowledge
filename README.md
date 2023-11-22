@@ -153,7 +153,7 @@ I prefer to set my functions in a different file, seperating logic from function
 
 - Pressing CTRL + Space spawns Intellisense.
 
-
+- Pressing Right Click on an Function Reference or Function and Pressing ```Rename Symbol``` (F2) will change UNIVERSALLY anywhere you used it, the name of the function as well as the references to it.
 
 
 
