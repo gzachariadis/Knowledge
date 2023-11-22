@@ -3,6 +3,17 @@ This repository is used as a virtual storage space for everything I have managed
 
 # Shortcuts
 
+### Important Shortcuts
+
+&nbsp;
+
+- Show Settings -  ```Ctrl``` + ```,```
+
+- Open Terminal -  ```Ctrl``` + ```'```
+
+- Go to File - ```Ctrl``` + ```P```
+
+- Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
 # Snippets
 
