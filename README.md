@@ -1,4 +1,4 @@
-# VS-Codium
+## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
 # Fonts
@@ -37,14 +37,26 @@ Resources
 
 # Editor
 
-Settings
+## Settings
+
+Zoom
 
 - Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
+
+Rules
 
 - Editor - Rules :  ```"editor.rulers": [ 120 ]``` (Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.)
 
 - Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }``` (Changes the Color of the Rendered Ruler)
 
+Indentation
+
+- Editor - Guides : Intentation ✅ (Controls whether Editor Should Render Intent Guides)
+
+
+
+
+<br><br>
 
 # Snippets
 
