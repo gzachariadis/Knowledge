@@ -53,7 +53,9 @@ Indentation
 
 - Editor - Guides : Intentation ✅ (Controls whether Editor Should Render Intent Guides)
 
+Word Wrap
 
+- Editor - Word Wrap - ```off``` (Wraps Lines of Code Based on Visibillity)
 
 
 <br><br>
