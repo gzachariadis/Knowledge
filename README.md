@@ -142,8 +142,18 @@ Installed
 
 # Tips
 
+# Window Instances
+
 I have 2 Instances Always Open - One on main Screen where I do side by side coding and one on a Vertical Monitor where I do my Functions. 
 I prefer to set my functions in a different file, seperating logic from functions or church and state however you wanna call it.
+
+# Uncategorized
+
+- Holding CTRL + Clicking on a Function will Open that Function for you, even if in another file.
+
+- Pressing CTRL + Space spawns Intellisense.
+
+
 
 
 
