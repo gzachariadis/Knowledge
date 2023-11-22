@@ -6,9 +6,11 @@ This repository is used as a virtual storage space for everything I have managed
 Settings
 
 - Editor - Font Size : ```13```
-&nbsp;
+
+
 - Editor - Line Height : ```23``` Calculated at ```Font Size``` times (x) ```Line Height``` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
-&nbsp;
+
+
 - Editor - Font Ligatures : ```False```
 
 Resources 
