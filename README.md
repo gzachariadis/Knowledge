@@ -34,6 +34,10 @@ Resources
 
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
+### Custom Shortcuts
+
+- Split Editor Down - ```Ctrl``` + ```Shift``` + ```Down Arrow```
+
 
 # Editor
 
