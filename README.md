@@ -59,6 +59,10 @@ Cursor
 
 - Editor - Curson Blinking - ```Phase``` (Controls the Animation of the Cursor)
 
+Minimap 
+
+- Editor - Minimap: Enabled ❌
+
 <br><br>
 
 ## Outline
@@ -72,6 +76,7 @@ Cursor
 - Outline: - Show Modules ✅
 
 Everything else is OFF.
+
 
 
 # Snippets
