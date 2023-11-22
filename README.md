@@ -15,6 +15,7 @@ Settings
 
 - Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
 
+<br>
 
 Resources 
 
