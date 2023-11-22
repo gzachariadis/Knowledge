@@ -37,8 +37,6 @@ Resources
 
 # Editor
 
-## Settings
-
 Zoom
 
 - Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
@@ -63,6 +61,19 @@ Cursor
 
 <br><br>
 
+## Outline
+
+- Outline: - Collapse Items:  ```alwaysExpand ```
+- Outline: - Icons ✅
+- Outline: - Problems: Badges ✅
+- Outline: - Problems: Colors ✅
+- Outline: - Show Functions ✅
+- Outline: - Show Methods ✅
+- Outline: - Show Modules ✅
+
+Everything else is OFF.
+
+
 # Snippets
 
 
@@ -71,6 +82,12 @@ Cursor
 
 
 # Extensions
+
+Installed 
+
+- Python by ms-python
+
+
 
 ### Python
 
