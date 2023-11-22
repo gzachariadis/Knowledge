@@ -43,7 +43,7 @@ Settings
 
 - Editor - Rules :  ```"editor.rulers": [ 120 ]``` (Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.)
 
-- Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }```
+- Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }``` (Changes the Color of the Rendered Ruler)
 
 
 # Snippets
