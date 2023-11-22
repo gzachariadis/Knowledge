@@ -36,19 +36,13 @@ Resources
 
 ### Custom Shortcuts
 
-- Split Editor Down -
+- Split Editor Down - 
 
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
 
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
-
-// Split the Editor Down when Pressing ```Ctrl``` + ```Shift``` + ```OEM_8```
-[
-    {
-        "key": "ctrl+shift+oem_8",
-        "command": "workbench.action.splitEditorDown",
-        "when": "editorFocus || editorTextFocus"
-    }
-]
+```
+"when": "editorFocus || editorTextFocus"
+ ```
 
 
 
