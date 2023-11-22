@@ -36,7 +36,12 @@ Resources
 
 ### Custom Shortcuts
 
-- Split Editor Down - 
+- Split Editor Down
+- Split Editor Left
+- Split Editor Right
+
+
+
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
 
@@ -65,19 +70,33 @@ Indentation
 
 Word Wrap
 
-- Editor - Word Wrap - ```off``` (Wraps Lines of Code Based on Visibillity)
+- Editor - Word Wrap : ```off``` (Wraps Lines of Code Based on Visibillity)
 
 Cursor 
 
-- Editor - Curson Blinking - ```Phase``` (Controls the Animation of the Cursor)
+- Editor - Curson Blinking : ```Phase``` (Controls the Animation of the Cursor)
 
 Minimap 
 
 - Editor - Minimap: Enabled ❌
 
+
+# Files
+
+- Files - Default Language : ```${activeEditorLanguage}```
+
+When creating a New File by Default the Editor will assign it the same language as the file you were editing. Say you editing a Python Script then CTRL+N will create a New Python File, same with a HTML file etc. 
+
+- Files - Default Encoding : ```UTF-8```
+
+When creating a File, it will be by Default a UTF-8 encoding file.
+
+*** Note to Self, Find a Way to do the same with Encoding as Language or Find a Way when Creating or Editing UTF-16 files to be able to create them using UTF-16 Default Encoding ***
+
+
 <br><br>
 
-## Outline
+# Outline
 
 - Outline: - Collapse Items:  ```alwaysExpand ```
 - Outline: - Icons ✅
@@ -88,6 +107,22 @@ Minimap
 - Outline: - Show Modules ✅
 
 Everything else is OFF.
+
+
+# WorkBench
+
+Preview
+
+- Workbench - Editor: Enable Preview ❌
+
+By default VS Code will Open a File in "Preview Mode" this means that when you click away, without editing the File or Double Clicking it, it will switch the Open Tab to the New File, since you were just "Previewing the File". I like to disable that and open the file instead.
+
+- Workbench - Startup Editor: ```None```
+
+Controls what to show upon Opening VS Code. I prefer None so Nothing.
+
+
+
 
 
 
