@@ -36,7 +36,10 @@ Resources
 
 ### Custom Shortcuts
 
-- Split Editor Down - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
+- Split Editor Down -
+
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
 
 // Split the Editor Down when Pressing ```Ctrl``` + ```Shift``` + ```OEM_8```
 [
