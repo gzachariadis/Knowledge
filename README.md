@@ -179,6 +179,7 @@ I prefer to set my functions in a different file, seperating logic from function
 
 ### Requirements
 
+- [Win-Get Cli](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget)
 - [Posh-git](https://github.com/dahlbyk/posh-git)
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons)
 - [Python 3.11](https://apps.microsoft.com/detail/python-311/9NRWMJP3717K?hl=en-us&gl=US) - or Desired Version
@@ -195,7 +196,23 @@ I prefer to set my functions in a different file, seperating logic from function
 
 ### Configuration
 
-Microsoft.PowerShell_profile.ps1
+#### Create Profile
+
+```
+codium $PROFILE
+```
+
+In case of Error, Run:
+
+```
+New-Item -Path $PROFILE -Type File -Force
+```
+
+Create the profile for Powershell.
+
+#### Edit Confirguatrion 
+
+Copy the Following Contents into Microsoft.PowerShell_profile.ps1
 
 ```
 oh-my-posh init pwsh --config 'C:/Users/Reverse/Documents/WindowsPowerShell/ballerini.omp.json' | Invoke-Expression
@@ -214,6 +231,9 @@ Due to frequent updates of Oh My Posh, Antivirus software occasionally flags it 
 
 if you get ```PowerShell says "execution of scripts is disabled on this system."``` run ```Set-ExecutionPolicy RemoteSigned```
 
+### Resources
+
+[Oh My Posh Guide](https://www.youtube.com/watch?v=-G6GbXGo4wo)
 
 
 
