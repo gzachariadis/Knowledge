@@ -5,11 +5,12 @@ This repository is used as a virtual storage space for everything I have managed
 
 Settings
 
-- Editor - Font Size : ```13```
+- Editor - Font Size : ```Place Here```
 
 
-- Editor - Line Height : ```23``` Calculated at ```Font Size``` times (x) ```Line Height``` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
+- Editor - Line Height : ```Place Here```
 
+Calculated at ```Font Size``` times (x) ```Line Height``` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
 
 - Editor - Font Ligatures : ```False```
 
@@ -39,8 +40,7 @@ Resources
 - Split Editor Down
 - Split Editor Left
 - Split Editor Right
-
-
+- Open & Close the Navigation Bar (Folder & Files View)
 
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
@@ -48,9 +48,6 @@ Resources
 ```
 "when": "editorFocus || editorTextFocus"
  ```
-
-
-
 
 # Editor
 
@@ -60,26 +57,35 @@ Zoom
 
 Rules
 
-- Editor - Rules :  ```"editor.rulers": [ 120 ]``` (Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.)
+- Editor - Rules :  ```"editor.rulers": [ 120 ]```
 
-- Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }``` (Changes the Color of the Rendered Ruler)
+Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.
+
+- Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }```
+
+Changes the Color of the Rendered Ruler
 
 Indentation
 
-- Editor - Guides : Intentation ✅ (Controls whether Editor Should Render Intent Guides)
+- Editor - Guides : Intentation ✅
+
+Controls whether Editor Should Render Intent Guides
 
 Word Wrap
 
-- Editor - Word Wrap : ```off``` (Wraps Lines of Code Based on Visibillity)
+- Editor - Word Wrap : ```off```
+
+Wraps Lines of Code Based on Visibillity
 
 Cursor 
 
-- Editor - Curson Blinking : ```Phase``` (Controls the Animation of the Cursor)
+- Editor - Curson Blinking : ```Phase```
+
+Controls the Animation of the Cursor.
 
 Minimap 
 
 - Editor - Minimap: Enabled ❌
-
 
 # Files
 
@@ -108,7 +114,6 @@ When creating a File, it will be by Default a UTF-8 encoding file.
 
 Everything else is OFF.
 
-
 # WorkBench
 
 Preview
@@ -121,16 +126,18 @@ By default VS Code will Open a File in "Preview Mode" this means that when you c
 
 Controls what to show upon Opening VS Code. I prefer None so Nothing.
 
-
-
-
-
-
 # Snippets
 
+Python Snippets
 
 
+Javascript Snippets
 
+
+HTML & Emmet Snippets
+
+
+CSS Snippets
 
 
 # Extensions
