@@ -169,15 +169,53 @@ I prefer to set my functions in a different file, seperating logic from function
 [Theme]() 
 [Icon Set]()
 
-# Terminal
+# Integrated Terminal
 
-Tools 
+- [Ballerini](https://github.com/Ballerini-Theme/oh-my-posh/tree/main)
 
-- [Oh my Posh](https://ohmyposh.dev/)
+
+## [Oh My Posh](https://ohmyposh.dev/)
   
-Troubleshooting
+### Installation
+
+```winget install JanDeDobbeleer.OhMyPosh -s winget```
+
+### Update
+
+```winget upgrade JanDeDobbeleer.OhMyPosh -s winget```
+
+### Modules
+
+- [Posh-git](https://github.com/dahlbyk/posh-git)
+- [Terminal Icons](https://github.com/devblackops/Terminal-Icons)
+
+
+```
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+### Configuration
+
+Microsoft.PowerShell_profile.ps1
+
+```
+oh-my-posh init pwsh --config 'C:/Users/Reverse/Documents/WindowsPowerShell/ballerini.omp.json' | Invoke-Expression
+
+Import-Module posh-git
+Import-Module Terminal-Icons
+```
+
+### Troubleshooting Oh My Posh
+
+Due to frequent updates of Oh My Posh, Antivirus software occasionally flags it (false positive). To ensure Oh My Posh isn't blocked you can either report it to your favorite Antivirus software as false positive (e.g. Report a false positive/negative to Microsoft for analysis) or create an exclusion for it. Exclusions should be added with the full path to the executable, you can get it with the following command from a PowerShell prompt:
+
+```(Get-Command oh-my-posh).Source```
+
+### Troubleshooting Powershell
 
 if you get ```PowerShell says "execution of scripts is disabled on this system."``` run ```Set-ExecutionPolicy RemoteSigned```
+
+
 
 
 # TO-DO
