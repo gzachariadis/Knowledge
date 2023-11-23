@@ -169,5 +169,20 @@ I prefer to set my functions in a different file, seperating logic from function
 [Theme]() 
 [Icon Set]()
 
+# Terminal
+
+Tools 
+
+- [Oh my Posh](https://ohmyposh.dev/)
+  
+Troubleshooting
+
+if you get ```PowerShell says "execution of scripts is disabled on this system."``` run ```Set-ExecutionPolicy RemoteSigned```
 
 
+# TO-DO
+
+- Learn More About Snippets
+- Configure a Global Hotkey to Use for Shortcuts
+- Configue oh-my-posh - Improve Terminal
+- Create an alias for code in powershell to do codium instead.
