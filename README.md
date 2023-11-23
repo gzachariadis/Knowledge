@@ -171,28 +171,27 @@ I prefer to set my functions in a different file, seperating logic from function
 
 # Integrated Terminal
 
-- [Ballerini](https://github.com/Ballerini-Theme/oh-my-posh/tree/main)
-
-
 ## [Oh My Posh](https://ohmyposh.dev/)
   
 ### Installation
 
 ```winget install JanDeDobbeleer.OhMyPosh -s winget```
 
-### Update
-
-```winget upgrade JanDeDobbeleer.OhMyPosh -s winget```
-
-### Modules
+### Requirements
 
 - [Posh-git](https://github.com/dahlbyk/posh-git)
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons)
+- [Python 3.11](https://apps.microsoft.com/detail/python-311/9NRWMJP3717K?hl=en-us&gl=US) - or Desired Version
+- [Windows Terminal](https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=en-US&gl=US)
+- [Windows Terminal Preview](https://apps.microsoft.com/detail/windows-terminal-preview/9N8G5RFZ9XK3?hl=en-US&gl=US)
 
+### Theme
 
-```
-Install-Module -Name Terminal-Icons -Repository PSGallery
-```
+- [Ballerini](https://github.com/Ballerini-Theme/oh-my-posh/tree/main)
+
+### Update
+
+```winget upgrade JanDeDobbeleer.OhMyPosh -s winget```
 
 ### Configuration
 
