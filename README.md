@@ -26,13 +26,15 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Open Terminal -  ```Ctrl``` + ```'```
 
-- Go to File - ```Ctrl``` + ```P```
+- Search Files by name/Go to File - ```Ctrl``` + ```P```
 
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
 - Show/Hide Sidebar - ```Ctrl``` + ```B```
 
 - Show/Hide Intelisense Autocomplete Feature - ```Ctrl``` + ```Space```
+
+- Change Text Size - ```Ctrl``` + ```+``` or ```-```
 
 ## Custom Shortcuts
 
@@ -56,6 +58,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Create Secondary Cursor on Line Below - Placing a Curson then Holding ```Alt``` (or ```Command```) and ```Ctrl``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
 
+- Close Tab - ```Ctrl``` + ```W```
+
 <br>
 <br>
 
@@ -74,6 +78,9 @@ This repository is used as a virtual storage space for everything I have managed
 - Move Selection Upwards/Downloads - ```Alt``` +  ```Arrow ↓ Down``` or ```Arrow ↑ Up```
 
 - Select current line - ```Ctrl``` + ```L```
+
+- Indent/Outdent line: ```Ctrl``` + ```[``` or ```]```
+
 
 ### Words
 
