@@ -1,6 +1,23 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
+# To-Do
+
+- Find a Way to Turn a Selected Line into Markdown Link (or something else)
+
+
+# Features
+
+
+## Task Runner
+
+
+### Resources
+
+- [Integrate with External Tasks via Tasks](https://code.visualstudio.com/docs/editor/tasks)
+
+- [VSCode: 10 Most Useful Tips And Tricks - Code Runner Chapter](https://www.youtube.com/watch?v=cVGMldhVRxU&list=PL0w2UavVM8W-nw8qz-JnZwXLjzldoTX6f&t=533s)
+
 # Shortcuts
 
 ## Workflow Shortcuts
@@ -185,7 +202,6 @@ HTML & Emmet Snippets
 
 CSS Snippets
 
-
 # Extensions
 
 Installed 
@@ -207,8 +223,6 @@ I prefer to set my functions in a different file, seperating logic from function
 - Pressing CTRL + Space spawns Intellisense.
 
 - Pressing Right Click on an Function Reference or Function and Pressing ```Rename Symbol``` (F2) will change UNIVERSALLY anywhere you used it, the name of the function as well as the references to it.
-
-
 
 # Personallization
 
