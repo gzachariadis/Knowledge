@@ -1,26 +1,6 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
-# Fonts
-
-Settings
-
-- Editor - Font Size : ```Place Here```
-
-
-- Editor - Line Height : ```Place Here```
-
-Calculated at ```Font Size``` times (x) ```Line Height``` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
-
-- Editor - Font Ligatures : ```False```
-
-<br>
-
-Resources 
-
-- [Coding Fonts](https://coding-fonts.netlify.app/)
-- [Nerd Fonts](https://www.nerdfonts.com/)
-
 # Shortcuts
 
 ### Important Shortcuts
@@ -51,6 +31,34 @@ Resources
 ```
 "when": "editorFocus || editorTextFocus"
  ```
+
+### Editor Need Knows
+
+- Holding ```Alt``` (or ```Command```) and ```Arrow Down``` or ```Arrow Up ↑``` will Move the cursored Line upwards or downwards
+
+
+
+# My Settings
+
+## Fonts
+
+Settings
+
+- Editor - Font Size : ```Place Here```
+
+
+- Editor - Line Height : ```Place Here```
+
+Calculated at ```Font Size``` times (x) ```Line Height``` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
+
+- Editor - Font Ligatures : ```False```
+
+Resources 
+
+- [Coding Fonts](https://coding-fonts.netlify.app/)
+- [Nerd Fonts](https://www.nerdfonts.com/)
+
+<br>
 
 # Editor
 
@@ -101,7 +109,6 @@ When creating a New File by Default the Editor will assign it the same language 
 When creating a File, it will be by Default a UTF-8 encoding file.
 
 *** Note to Self, Find a Way to do the same with Encoding as Language or Find a Way when Creating or Editing UTF-16 files to be able to create them using UTF-16 Default Encoding ***
-
 
 <br><br>
 
