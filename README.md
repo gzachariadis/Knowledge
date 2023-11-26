@@ -4,7 +4,12 @@ This repository is used as a virtual storage space for everything I have managed
 # To-Do
 
 - Find a Way to Turn a Selected Line into Markdown Link (or something else)
+- Learn More About Snippets
+- Configure a Global Hotkey to Use for Shortcuts
+- Configue oh-my-posh - Improve Terminal
+- Create an alias for code in powershell to do codium instead.
 
+<br>
 
 # Features
 
@@ -300,13 +305,5 @@ if you get ```PowerShell says "execution of scripts is disabled on this system."
 
 ### Resources
 
-[Oh My Posh Guide](https://www.youtube.com/watch?v=-G6GbXGo4wo)
-
-
-
-# TO-DO
-
-- Learn More About Snippets
-- Configure a Global Hotkey to Use for Shortcuts
-- Configue oh-my-posh - Improve Terminal
-- Create an alias for code in powershell to do codium instead.
+- [Oh My Posh Guide](https://www.youtube.com/watch?v=-G6GbXGo4wo)
+- [Povio Shortcuts](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
