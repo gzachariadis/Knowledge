@@ -82,13 +82,17 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Move Selection Upwards/Downloads - ```Alt``` +  ```Arrow ↓ Down``` or ```Arrow ↑ Up```
 
-- Select current line - ```Ctrl``` + ```L```
+- Select Current Line - ```Ctrl``` + ```L```
 
-- Indent/Outdent line: ```Ctrl``` + ```[``` or ```]```
+- Indent/Outdent Line - ```Ctrl``` + ```[``` or ```]```
+
+- Go to the end of Line - ```End```
 
 ### Words
 
-- Select current word - ```Ctrl``` + ```D```
+- Select Current Word - ```Ctrl``` + ```D```
+
+- Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow ⇦ Left``` or ```Arrow ⇨ Right```
 
 ## Code Formatting Shortcuts
 
