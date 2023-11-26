@@ -1,8 +1,6 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
----- TOC -----
-
 # Table of Contents
 
 1. [Features](#Features)
@@ -11,7 +9,12 @@ This repository is used as a virtual storage space for everything I have managed
 4. [Third Example](#third-example)
 5. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
-
+- [Name]
+- [Description]
+  * [Section1]
+  * [Section2]
+ 
+  * 
 # To-Do
 
 - Find a Way to Turn a Selected Line into Markdown Link (or something else)
