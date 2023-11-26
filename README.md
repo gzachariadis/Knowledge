@@ -35,12 +35,15 @@ Resources
 
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
+- Hide/Show Sidebar - ```Ctrl``` + ```B```
+
+
+
 ### Custom Shortcuts
 
 - Split Editor Down
 - Split Editor Left
 - Split Editor Right
-- Open & Close the Navigation Bar (Folder & Files View)
 
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
