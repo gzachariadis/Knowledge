@@ -88,6 +88,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Go to the end of Line - ```End```
 
+- Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
+
 ### Words
 
 - Select Current Word - ```Ctrl``` + ```D```
