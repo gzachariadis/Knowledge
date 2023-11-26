@@ -1,6 +1,47 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
+# Table of Contents
+
+- [Features](#features)
+  * [Task Runner](#task-runner)
+    + [Resources To-Do](#resources-to-do)
+- [Shortcuts](#shortcuts)
+  * [Workflow Shortcuts](#workflow-shortcuts)
+  * [Custom Shortcuts](#custom-shortcuts)
+  * [Editor Shortcuts](#editor-shortcuts)
+  * [Code Editing Shortcuts](#code-editing-shortcuts)
+    + [Lines](#lines)
+    + [Words](#words)
+  * [Code Formatting Shortcuts](#code-formatting-shortcuts)
+  * [Resources](#resources)
+- [My Settings](#my-settings)
+  * [Fonts](#fonts)
+- [Editor](#editor)
+- [Files](#files)
+- [Outline](#outline)
+- [WorkBench](#workbench)
+- [Snippets](#snippets)
+- [Extensions](#extensions)
+- [Tips](#tips)
+- [Window Instances](#window-instances)
+- [Uncategorized](#uncategorized)
+- [Personallization](#personallization)
+- [Integrated Terminal](#integrated-terminal)
+  * [[Oh My Posh](https://ohmyposh.dev/)](#-oh-my-posh--https---ohmyposhdev--)
+    + [Installation](#installation)
+    + [Requirements](#requirements)
+    + [Theme](#theme)
+    + [Update](#update)
+    + [Configuration](#configuration)
+      - [Create Profile](#create-profile)
+      - [Edit Confirguatrion](#edit-confirguatrion)
+    + [Troubleshooting Oh My Posh](#troubleshooting-oh-my-posh)
+    + [Troubleshooting Powershell](#troubleshooting-powershell)
+    + [Resources](#resources-1)
+
+
+
 # To-Do
 
 - Find a Way to Turn a Selected Line into Markdown Link (or something else)
