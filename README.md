@@ -86,7 +86,6 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Indent/Outdent line: ```Ctrl``` + ```[``` or ```]```
 
-
 ### Words
 
 - Select current word - ```Ctrl``` + ```D```
@@ -99,7 +98,9 @@ This repository is used as a virtual storage space for everything I have managed
 [](url)
 
 - Fold based on Indentation Level - ```Ctrl``` + ```K``` then ```Ctrl``` + ```1``` to ```5``` (based on Indentation Level you want to Fold - pressing 2 will fold 3-5)
- 
+
+- Shift a Block of Code Left or Right - ```Shift``` + ```Tab```
+
 <br>
 <br>
 
