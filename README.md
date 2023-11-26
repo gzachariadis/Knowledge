@@ -25,7 +25,6 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Split Editor Right
 
-
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
 
 ```
