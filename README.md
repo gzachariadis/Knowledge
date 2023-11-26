@@ -35,9 +35,9 @@ Resources
 
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
-- Hide/Show Sidebar - ```Ctrl``` + ```B```
+- Show/Hide Sidebar - ```Ctrl``` + ```B```
 
-
+- Show/Hide Intelisense Autocomplete Feature - ```Ctrl``` + ```Space```
 
 ### Custom Shortcuts
 
