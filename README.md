@@ -3,9 +3,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 # Shortcuts
 
-### Important Shortcuts
-
-&nbsp;
+## Workflow Shortcuts
 
 - Show Settings -  ```Ctrl``` + ```,```
 
@@ -19,10 +17,12 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Show/Hide Intelisense Autocomplete Feature - ```Ctrl``` + ```Space```
 
-### Custom Shortcuts
+## Custom Shortcuts
 
 - Split Editor Down
+
 - Split Editor Left
+
 - Split Editor Right
 
 
@@ -32,12 +32,46 @@ This repository is used as a virtual storage space for everything I have managed
 "when": "editorFocus || editorTextFocus"
  ```
 
-### Editor Need Knows
+## Editor Shortcuts
 
-- Holding ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up``` will Move the cursored Line upwards or downwards
+- Move the Cursored line upwards or downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
 
-- Holding ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up``` will include the next line in the selection.
+- Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
 
+- Create Secondary Cursor on Line Below - Placing a Curson then Holding ```Alt``` (or ```Command```) and ```Ctrl``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
+
+<br>
+<br>
+
+- Having a Multicursor and pressing ```Ctrl``` + ```Shift``` + ```L``` will Select (given the cursor position) the last common word between those strings. Eg. havigng background-color on 3 lines and hovering a multicursor anywhere withing 'color' will highlight the word 'color' in all 3 lines.
+
+<br>
+
+## Code Editing Shortcuts 
+
+### Lines
+
+- Delete Current Line - ```Ctrl``` + ```Shift``` + ```K```
+
+- Duplicate Current Line Upwards/Downwards - ```Shift``` + ```Alt``` + ```Arrow ↓ Down``` or ```Arrow ↑ Up```
+
+- Move Selection Upwards/Downloads - ```Alt``` +  ```Arrow ↓ Down``` or ```Arrow ↑ Up```
+
+- Select current line - ```Ctrl``` + ```L```
+
+### Words
+
+- Select current word - ```Ctrl``` + ```D```
+
+## Code Formatting Shortcuts
+
+- Code Formatting - ```Ctrl``` + ```K``` then ```Ctrl``` + ```F``` 
+
+- Fold/Unfold Code - Select a Piece of Code then ```Ctrl``` + ```Shift``` + ```[``` or ```]```
+[](url)
+
+- Fold based on Indentation Level - ```Ctrl``` + ```K``` then ```Ctrl``` + ```1``` to ```5``` (based on Indentation Level you want to Fold - pressing 2 will fold 3-5)
+ 
 <br>
 <br>
 
