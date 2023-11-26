@@ -1,13 +1,6 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
-# Table of Contents
-
-- [Features](#Features)
-  * [Task Runner](#Task-Runner)
-  * [Section2]
- 
-  * 
 # To-Do
 
 - Find a Way to Turn a Selected Line into Markdown Link (or something else)
