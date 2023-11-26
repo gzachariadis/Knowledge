@@ -1,6 +1,17 @@
 ## VS-Codium
 This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
 
+---- TOC -----
+
+# Table of Contents
+
+1. [Features](#Features)
+   1.1 [Task Runner](#Task Runner)
+3. [Example2](#example2)
+4. [Third Example](#third-example)
+5. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+
+
 # To-Do
 
 - Find a Way to Turn a Selected Line into Markdown Link (or something else)
@@ -13,7 +24,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 ## Task Runner
 
-### Resources
+### Resources To-Do
 
 - [Integrate with External Tasks via Tasks](https://code.visualstudio.com/docs/editor/tasks)
 
@@ -45,13 +56,6 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Split Editor Right
 
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
-
-```
-"when": "editorFocus || editorTextFocus"
- ```
-### Resources
-
 ## Editor Shortcuts
 
 - Move the Cursored line upwards or downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
@@ -66,8 +70,6 @@ This repository is used as a virtual storage space for everything I have managed
 <br>
 
 - Having a Multicursor and pressing ```Ctrl``` + ```Shift``` + ```L``` will Select (given the cursor position) the last common word between those strings. Eg. havigng background-color on 3 lines and hovering a multicursor anywhere withing 'color' will highlight the word 'color' in all 3 lines.
-
-### Resources 
 
 ## Code Editing Shortcuts 
 
@@ -87,17 +89,11 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
 
-### Resources 
-
-- [The best VS Code trick that you're probably not using.](https://www.youtube.com/watch?v=mOeWy5Q1P4E)
-
 ### Words
 
 - Select Current Word - ```Ctrl``` + ```D```
 
 - Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ```
-
-### Resources 
 
 ## Code Formatting Shortcuts
 
@@ -110,7 +106,11 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Shift a Block of Code Left or Right - ```Shift``` + ```Tab```
 
-### Resources 
+## Resources
+
+- [VS Code Tips & Tricks](https://github.com/microsoft/vscode-tips-and-tricks)
+- [Shortcuts Povio Blog](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
+- [The best VS Code trick that you're probably not using.](https://www.youtube.com/watch?v=mOeWy5Q1P4E)
 
 <br>
 <br>
@@ -317,3 +317,19 @@ if you get ```PowerShell says "execution of scripts is disabled on this system."
 
 - [Oh My Posh Guide](https://www.youtube.com/watch?v=-G6GbXGo4wo)
 - [Povio Shortcuts](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>OEM_8</kbd> + <kbd>Down Arrow </kbd>
+
+```
+"when": "editorFocus || editorTextFocus"
+ ```
+
