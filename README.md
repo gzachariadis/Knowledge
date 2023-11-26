@@ -4,14 +4,13 @@ This repository is used as a virtual storage space for everything I have managed
 # Table of Contents
 
 1. [Features](#Features)
-   1.1 [Task Runner](#Task Runner)
+   1.1 [Task Runner](#Task-Runner)
 3. [Example2](#example2)
 4. [Third Example](#third-example)
 5. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
-- [Name]
-- [Description]
-  * [Section1]
+- [Features](#Features)
+  * [Task Runner](#Task-Runner)
   * [Section2]
  
   * 
