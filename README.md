@@ -9,13 +9,9 @@ This repository is used as a virtual storage space for everything I have managed
 - Configue oh-my-posh - Improve Terminal
 - Create an alias for code in powershell to do codium instead.
 
-<br>
-
 # Features
 
-
 ## Task Runner
-
 
 ### Resources
 
@@ -54,6 +50,7 @@ This repository is used as a virtual storage space for everything I have managed
 ```
 "when": "editorFocus || editorTextFocus"
  ```
+### Resources
 
 ## Editor Shortcuts
 
@@ -70,7 +67,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Having a Multicursor and pressing ```Ctrl``` + ```Shift``` + ```L``` will Select (given the cursor position) the last common word between those strings. Eg. havigng background-color on 3 lines and hovering a multicursor anywhere withing 'color' will highlight the word 'color' in all 3 lines.
 
-<br>
+### Resources 
 
 ## Code Editing Shortcuts 
 
@@ -90,11 +87,17 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
 
+### Resources 
+
+- [The best VS Code trick that you're probably not using.](https://www.youtube.com/watch?v=mOeWy5Q1P4E)
+
 ### Words
 
 - Select Current Word - ```Ctrl``` + ```D```
 
 - Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ```
+
+### Resources 
 
 ## Code Formatting Shortcuts
 
@@ -107,6 +110,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Shift a Block of Code Left or Right - ```Shift``` + ```Tab```
 
+### Resources 
+
 <br>
 <br>
 
@@ -117,7 +122,6 @@ This repository is used as a virtual storage space for everything I have managed
 Settings
 
 - Editor - Font Size : ```Place Here```
-
 
 - Editor - Line Height : ```Place Here```
 
@@ -226,7 +230,6 @@ CSS Snippets
 Installed 
 
 - Python by ms-python
-
 
 # Tips
 
