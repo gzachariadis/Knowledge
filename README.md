@@ -34,7 +34,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 ### Editor Need Knows
 
-- Holding ```Alt``` (or ```Command```) and ```Arrow Down``` or ```Arrow Up ↑``` will Move the cursored Line upwards or downwards
+- Holding ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up``` will Move the cursored Line upwards or downwards
 
 
 
