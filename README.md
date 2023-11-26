@@ -36,7 +36,10 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Holding ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up``` will Move the cursored Line upwards or downwards
 
+- Holding ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up``` will include the next line in the selection.
 
+<br>
+<br>
 
 # My Settings
 
