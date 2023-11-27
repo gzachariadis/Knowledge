@@ -119,9 +119,15 @@ This repository is used as a virtual storage space for everything I have managed
 
 ### Lines
 
+- Select Current Line - ```Ctrl``` + ```L```
+
 - Delete Current Line - ```Ctrl``` + ```Shift``` + ```K```
 
 - Duplicate Current Line Upwards/Downwards - ```Shift``` + ```Alt``` + ```Arrow ↓ Down``` or ```Arrow ↑ Up```
+
+- Indent/Outdent Line - ```Ctrl``` + ```[``` or ```]```
+
+- Turn Line to Comment - ```Ctrl``` + ```Slash (/)``` (next to Right Shift)
 
 <br>
 
@@ -131,9 +137,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 <br>
 
-- Select Current Line - ```Ctrl``` + ```L```
 
-- Indent/Outdent Line - ```Ctrl``` + ```[``` or ```]```
 
 - Go to the end of Line - ```End```
 
@@ -141,7 +145,6 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
 
-- Turn Current Cursored Line to Comment - ```Ctrl``` + ```Slash (/)``` (next to Right Shift)
 
 ### Words
 
