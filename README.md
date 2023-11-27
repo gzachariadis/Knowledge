@@ -145,7 +145,9 @@ This repository is used as a virtual storage space for everything I have managed
 <br>
 
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
-  
+
+- Switch Betweeen Quotes - ```Ctrl``` + ```Backslash``` (Requirement ---> [Toggle Quotes Extension](https://open-vsx.org/extension/BriteSnow/vscode-toggle-quotes))
+
 <br>
 
 - Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
