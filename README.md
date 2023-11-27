@@ -200,7 +200,13 @@ Cursor
 
 - Editor - Curson Blinking : ```Phase```
 
-Controls the Animation of the Cursor.
+Controls the Blinking Animation of the Cursor.
+
+- Editor - Cursor Smooth Caret Animation : ```on```
+
+Allows for a small animation as cursor moves from place to place
+
+- Editor - Smooth Scrolling : ✅
 
 Minimap 
 
@@ -234,7 +240,7 @@ Everything else is OFF.
 
 # WorkBench
 
-Preview
+## Preview
 
 - Workbench - Editor: Enable Preview ❌
 
@@ -244,11 +250,20 @@ By default VS Code will Open a File in "Preview Mode" this means that when you c
 
 Controls what to show upon Opening VS Code. I prefer None so Nothing.
 
-# Window
+
+## List
+
+- Workbench - Smooth Scrolling : ✅
+
+Enables Smooth Scrolling along Lists and Trees.
+
+## Window
 
 - Window - Zoom Level: ```0```
 
 Adjusts the Zoom Level on the Whole Window - Original size is 0.
+
+
 
 
 # Snippets
