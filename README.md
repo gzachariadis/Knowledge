@@ -90,6 +90,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Change Text Size - ```Ctrl``` + ```+``` or ```-```
 
+- Zen Mode -  ```Ctrl``` +  ```K``` then  ```F```
+
 ## Custom Shortcuts
 
 - Split Editor Down
