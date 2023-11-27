@@ -147,7 +147,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Select Current Word - ```Ctrl``` + ```D```
 
-- Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ```
+- Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ``` (Also Used to Navigate Faster Between Words instead of Characters)
 
 ## Formatting
 
