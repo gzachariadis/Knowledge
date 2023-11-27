@@ -96,6 +96,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Close Tab - ```Ctrl``` + ```W```
 
+- Open a Right Side View - ```Ctrl``` + ```\``` (next to right shift)
+
 <br>
 <br>
 
