@@ -168,13 +168,13 @@ Resources
 
 <br>
 
-# Editor
+## Editor
 
-Zoom
+### Zoom
 
 - Editor - Mouse Wheel Zoom : ✅ (Hold ```Ctrl``` and ```Zoom/Unzoom``` Editor with your ```Mouse Wheel``` )
 
-Rules
+### Rules
 
 - Editor - Rules :  ```"editor.rulers": [ 120 ]```
 
@@ -182,21 +182,21 @@ Renders a Verical Rule after Certain Number of Monospace Characters. As to say, 
 
 - Workbench - Color Customizations : ```"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }```
 
-Changes the Color of the Rendered Ruler
+Changes the Color of the Rendered Ruler.
 
-Indentation
+### Indentation
 
 - Editor - Guides : Intentation ✅
 
 Controls whether Editor Should Render Intent Guides
 
-Word Wrap
+### Word Wrap
 
 - Editor - Word Wrap : ```off```
 
 Wraps Lines of Code Based on Visibillity
 
-Cursor 
+### Cursor 
 
 - Editor - Curson Blinking : ```Phase```
 
@@ -208,11 +208,11 @@ Allows for a small animation as cursor moves from place to place
 
 - Editor - Smooth Scrolling : ✅
 
-Minimap 
+### Minimap 
 
 - Editor - Minimap: Enabled ❌
 
-# Files
+## Files
 
 - Files - Default Language : ```${activeEditorLanguage}```
 
@@ -226,7 +226,7 @@ When creating a File, it will be by Default a UTF-8 encoding file.
 
 <br><br>
 
-# Outline
+## Outline
 
 - Outline: - Collapse Items:  ```alwaysExpand ```
 - Outline: - Icons ✅
@@ -238,9 +238,9 @@ When creating a File, it will be by Default a UTF-8 encoding file.
 
 Everything else is OFF.
 
-# WorkBench
+## WorkBench
 
-## Preview
+### Preview
 
 - Workbench - Editor: Enable Preview ❌
 
@@ -250,23 +250,25 @@ By default VS Code will Open a File in "Preview Mode" this means that when you c
 
 Controls what to show upon Opening VS Code. I prefer None so Nothing.
 
-
-## List
+### List
 
 - Workbench - Smooth Scrolling : ✅
 
 Enables Smooth Scrolling along Lists and Trees.
 
-## Window
+### Window
 
 - Window - Zoom Level: ```0```
 
 Adjusts the Zoom Level on the Whole Window - Original size is 0.
 
+### Breadcrumbs
 
+- Workbench - Breadcrumbs :  ❌
 
+Disables Breadcrumbs Fully.
 
-# Snippets
+## Snippets
 
 Python Snippets
 
@@ -279,20 +281,20 @@ HTML & Emmet Snippets
 
 CSS Snippets
 
-# Extensions
+## Extensions
 
 Installed 
 
 - Python by ms-python
 
-# Tips
+## Tips
 
-# Window Instances
+## Window Instances
 
 I have 2 Instances Always Open - One on main Screen where I do side by side coding and one on a Vertical Monitor where I do my Functions. 
 I prefer to set my functions in a different file, seperating logic from functions or church and state however you wanna call it.
 
-# Uncategorized
+## Uncategorized
 
 - Holding CTRL + Clicking on a Function will Open that Function for you, even if in another file.
 
@@ -300,20 +302,20 @@ I prefer to set my functions in a different file, seperating logic from function
 
 - Pressing Right Click on an Function Reference or Function and Pressing ```Rename Symbol``` (F2) will change UNIVERSALLY anywhere you used it, the name of the function as well as the references to it.
 
-# Personallization
+## Personallization
 
 [Theme]() 
 [Icon Set]()
 
-# Integrated Terminal
+## Integrated Terminal
 
-## [Oh My Posh](https://ohmyposh.dev/)
+### [Oh My Posh](https://ohmyposh.dev/)
   
-### Installation
+#### Installation
 
 ```winget install JanDeDobbeleer.OhMyPosh -s winget```
 
-### Requirements
+#### Requirements
 
 - [Win-Get Cli](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget)
 - [Posh-git](https://github.com/dahlbyk/posh-git)
@@ -322,17 +324,17 @@ I prefer to set my functions in a different file, seperating logic from function
 - [Windows Terminal](https://apps.microsoft.com/detail/windows-terminal/9N0DX20HK701?hl=en-US&gl=US)
 - [Windows Terminal Preview](https://apps.microsoft.com/detail/windows-terminal-preview/9N8G5RFZ9XK3?hl=en-US&gl=US)
 
-### Theme
+#### Theme
 
 - [Ballerini](https://github.com/Ballerini-Theme/oh-my-posh/tree/main)
 
-### Update
+#### Update
 
 ```winget upgrade JanDeDobbeleer.OhMyPosh -s winget```
 
-### Configuration
+#### Configuration
 
-#### Create Profile
+##### Create Profile
 
 ```
 codium $PROFILE
@@ -346,7 +348,7 @@ New-Item -Path $PROFILE -Type File -Force
 
 Create the profile for Powershell.
 
-#### Edit Confirguatrion 
+##### Edit Confirguatrion 
 
 Copy the Following Contents into Microsoft.PowerShell_profile.ps1
 
@@ -357,17 +359,17 @@ Import-Module posh-git
 Import-Module Terminal-Icons
 ```
 
-### Troubleshooting Oh My Posh
+##### Troubleshooting Oh My Posh
 
 Due to frequent updates of Oh My Posh, Antivirus software occasionally flags it (false positive). To ensure Oh My Posh isn't blocked you can either report it to your favorite Antivirus software as false positive (e.g. Report a false positive/negative to Microsoft for analysis) or create an exclusion for it. Exclusions should be added with the full path to the executable, you can get it with the following command from a PowerShell prompt:
 
 ```(Get-Command oh-my-posh).Source```
 
-### Troubleshooting Powershell
+##### Troubleshooting Powershell
 
 if you get ```PowerShell says "execution of scripts is disabled on this system."``` run ```Set-ExecutionPolicy RemoteSigned```
 
-### Resources
+## Resources
 
 - [Oh My Posh Guide](https://www.youtube.com/watch?v=-G6GbXGo4wo)
 - [Povio Shortcuts](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
