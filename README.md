@@ -78,25 +78,29 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Show Settings -  ```Ctrl``` + ```,```
 
-- Open Terminal -  ```Ctrl``` + ```'```
-
-- Search Files by name/Go to File - ```Ctrl``` + ```P```
-
 - Command Pallet - ```Ctrl``` + ```Shift``` + ```P```
 
 - Show/Hide Sidebar - ```Ctrl``` + ```B```
 
 - Show/Hide Intelisense Autocomplete Feature - ```Ctrl``` + ```Space```
 
-- Change Text Size - ```Ctrl``` + ```+``` or ```-```
-
 - Zen Mode -  ```Ctrl``` +  ```K``` then  ```F```
+
+### Navigation 
+
+- Search Files by name/Go to File - ```Ctrl``` + ```P```
 
 - Switch Between Open Tabs - ```Ctrl``` + ```Tab``` (Optional : ```Shift``` to Tab Backwards)
 
 - Switch Between Open Tabs vol.2 - ```Alt``` + ```1``` to ```9``` (1 = First Tab, 2 = Second Tab etc. etc.)
 
 - Switch Between Editor Windows - ```Ctrl``` + ```1``` to ```9``` (1 = First Editor, 2 = Second Editor etc. etc.)
+
+### Terminal 
+
+- Show/Hide Terminal -  ```Ctrl``` + ```'```
+
+- Clear Terminal - ```Ctrl``` + ```L```
 
 ## Custom Shortcuts
 
@@ -115,7 +119,12 @@ This repository is used as a virtual storage space for everything I have managed
 <br>
 <br>
 
-## Code Editing Shortcuts 
+- Change Text Size - ```Ctrl``` + ```+``` or ```-```
+
+<br>
+<br>
+
+## Editing Shortcuts 
 
 ### Lines
 
@@ -149,6 +158,11 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Select Words Going Forwards/Backwards - ```Ctrl``` + ```Shift``` + ```Arrow  Left``` or ```Arrow Right ▶️ ```
 
+<br>
+<br>
+<br>
+<br>
+
 ## Formatting
 
 - Code Formatting - ```Ctrl``` + ```K``` then ```Ctrl``` + ```F``` 
@@ -164,6 +178,8 @@ This repository is used as a virtual storage space for everything I have managed
 - Go to Definition of a Function - ```Ctrl``` + ```Left Click```
 
 - Search for a Function/Variable Declaration (AKA Go to Symbol) - ```Ctrl``` + ```Shift```  + ```O``` (Letter O not 0)
+
+- Go to Specific Line - ```Ctrl``` + ```G``` then type the Line Number eg. 11
 
 ### Files
 
@@ -196,6 +212,10 @@ This repository is used as a virtual storage space for everything I have managed
 - [Shortcuts Povio Blog](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
 - [The best VS Code trick that you're probably not using.](https://www.youtube.com/watch?v=mOeWy5Q1P4E)
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
