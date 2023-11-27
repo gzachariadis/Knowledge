@@ -93,7 +93,10 @@ This repository is used as a virtual storage space for everything I have managed
 - Zen Mode -  ```Ctrl``` +  ```K``` then  ```F```
 
 - Switch Between Open Tabs - ```Ctrl``` + ```Tab``` (Optional : ```Shift``` to Tab Backwards)
+
 - Switch Between Open Tabs vol.2 - ```Alt``` + ```1``` to ```9``` (1 = First Tab, 2 = Second Tab etc. etc.)
+
+- Switch Between Editor Windows - ```Ctrl``` + ```1``` to ```9``` (1 = First Editor, 2 = Second Editor etc. etc.)
 
 ## Custom Shortcuts
 
