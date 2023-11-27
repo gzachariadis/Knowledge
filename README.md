@@ -92,6 +92,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Zen Mode -  ```Ctrl``` +  ```K``` then  ```F```
 
+- Switch Between Open Tabs - ```Ctrl``` + ```Tab``` (Optional : ```Shift``` to Tab Backwards)
+
 ## Custom Shortcuts
 
 - Split Editor Down
@@ -102,20 +104,12 @@ This repository is used as a virtual storage space for everything I have managed
 
 ## Editor Shortcuts
 
-- Move the Cursored line upwards or downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
-
-- Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
-
-- Create Secondary Cursor on Line Below - Placing a Curson then Holding ```Alt``` (or ```Command```) and ```Ctrl``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
-
 - Close Tab - ```Ctrl``` + ```W```
 
 - Open a Right Side View - ```Ctrl``` + ```\``` (next to right shift)
 
 <br>
 <br>
-
-- Having a Multicursor and pressing ```Ctrl``` + ```Shift``` + ```L``` will Select (given the cursor position) the last common word between those strings. Eg. havigng background-color on 3 lines and hovering a multicursor anywhere withing 'color' will highlight the word 'color' in all 3 lines.
 
 ## Code Editing Shortcuts 
 
@@ -125,7 +119,13 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Duplicate Current Line Upwards/Downwards - ```Shift``` + ```Alt``` + ```Arrow ↓ Down``` or ```Arrow ↑ Up```
 
+<br>
+
 - Move Selection Upwards/Downloads - ```Alt``` +  ```Arrow ↓ Down``` or ```Arrow ↑ Up```
+
+- Move the Cursored line upwards or downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
+
+<br>
 
 - Select Current Line - ```Ctrl``` + ```L```
 
@@ -135,13 +135,17 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
 
+- Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
+
+- Turn Current Cursored Line to Comment - ```Ctrl``` + ```Slash (/)``` (next to Right Shift)
+
 ### Words
 
 - Select Current Word - ```Ctrl``` + ```D```
 
 - Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ```
 
-## Code Formatting Shortcuts
+## Formatting
 
 - Code Formatting - ```Ctrl``` + ```K``` then ```Ctrl``` + ```F``` 
 
@@ -152,12 +156,43 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Shift a Block of Code Left or Right - ```Shift``` + ```Tab```
 
+### Navigation
+
+- Go to Definition of a Function - ```Ctrl``` + ```Left Click```
+
+### Files
+
+- Search Within a File - ```Ctrl``` + ```F```
+
+- To Open the Replace under Find - ```Ctrl``` + ```H```
+
+- To Replace All Instances of Find - ```Ctrl``` + ```Alt``` + ```Enter```
+
+### Multicursor
+
+- Select all Instances of a Selection and Edit them Simultaneously -  ```Ctrl``` + ```Alt``` + ```L```
+  
+- Having a Multicursor and pressing ```Ctrl``` + ```Shift``` + ```L``` will Select (given the cursor position) the last common word between those strings. Eg. havigng background-color on 3 lines and hovering a multicursor anywhere withing 'color' will highlight the word 'color' in all 3 lines.
+
+- Select Something then Pressing ```Ctrl``` + ```D``` will Select the Next Instance of Selected Thing and add a Multicursor, pressing ```Ctrl``` + ```D``` again will also select the following etc. etc. 
+
+- Create Secondary Cursor on Line Below - Placing a Curson then Holding ```Alt``` (or ```Command```) and ```Ctrl``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
+
+- Spawn Multiple Cursors - ```Ctrl``` +  ```Shift``` +  ```Alt``` +  ```Up Arrow``` or  ```Down Arrow```
+
+<br>
+<br>
+<br>
+<br>
+
 ## Resources
 
 - [VS Code Tips & Tricks](https://github.com/microsoft/vscode-tips-and-tricks)
 - [Shortcuts Povio Blog](https://povio.com/blog/shortcut-your-way-to-faster-coding-in-visual-studio-code/#:~:text=Select%20current%20line%3A%20Ctrl%20%2B%20L)
 - [The best VS Code trick that you're probably not using.](https://www.youtube.com/watch?v=mOeWy5Q1P4E)
 
+<br>
+<br>
 <br>
 <br>
 
