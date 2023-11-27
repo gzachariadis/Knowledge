@@ -146,10 +146,7 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
 
-- Switch Betweeen Quotes - ```Ctrl``` + ```Backslash```
-
-Requirement - [Toggle Quotes Extension](https://open-vsx.org/extension/BriteSnow/vscode-toggle-quotes)
-
+- Switch Betweeen Quotes - ```Ctrl``` + ```Backslash``` (Requirement - [Toggle Quotes Extension](https://open-vsx.org/extension/BriteSnow/vscode-toggle-quotes))
 
 <br>
 
