@@ -244,6 +244,13 @@ By default VS Code will Open a File in "Preview Mode" this means that when you c
 
 Controls what to show upon Opening VS Code. I prefer None so Nothing.
 
+# Window
+
+- Window - Zoom Level: ```0```
+
+Adjusts the Zoom Level on the Whole Window - Original size is 0.
+
+
 # Snippets
 
 Python Snippets
