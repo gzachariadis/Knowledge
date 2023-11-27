@@ -123,28 +123,23 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Delete Current Line - ```Ctrl``` + ```Shift``` + ```K```
 
+- Indent/Outdent Current Line - ```Ctrl``` + ```[``` or ```]```
+
+- Comment Line - ```Ctrl``` + ```Slash (/)``` (next to Right Shift)
+
 - Duplicate Current Line Upwards/Downwards - ```Shift``` + ```Alt``` + ```Arrow ↓ Down``` or ```Arrow ↑ Up```
 
-- Indent/Outdent Line - ```Ctrl``` + ```[``` or ```]```
-
-- Turn Line to Comment - ```Ctrl``` + ```Slash (/)``` (next to Right Shift)
-
-<br>
-
-- Move Selection Upwards/Downloads - ```Alt``` +  ```Arrow ↓ Down``` or ```Arrow ↑ Up```
-
-- Move the Cursored line upwards or downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
-
-<br>
-
-
+- Move the Line Upwards or Downwards - Hold ```Alt``` (or ```Command```) and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
 
 - Go to the end of Line - ```End```
 
+<br>
+
 - Highlight Everything from Cursor to End of Line - ```Shift``` + ```End```
+  
+<br>
 
 - Extend your Selection to the Following Line -  Hold ```Shift``` and ```Arrow ↓ Down``` or ```Arrow ↑ Up```.
-
 
 ### Words
 
