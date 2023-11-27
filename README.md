@@ -154,7 +154,6 @@ This repository is used as a virtual storage space for everything I have managed
 - Code Formatting - ```Ctrl``` + ```K``` then ```Ctrl``` + ```F``` 
 
 - Fold/Unfold Code - Select a Piece of Code then ```Ctrl``` + ```Shift``` + ```[``` or ```]```
-[](url)
 
 - Fold based on Indentation Level - ```Ctrl``` + ```K``` then ```Ctrl``` + ```1``` to ```5``` (based on Indentation Level you want to Fold - pressing 2 will fold 3-5)
 
@@ -163,6 +162,8 @@ This repository is used as a virtual storage space for everything I have managed
 ### Navigation
 
 - Go to Definition of a Function - ```Ctrl``` + ```Left Click```
+
+- Search for a Function/Variable Declaration (AKA Go to Symbol) - ```Ctrl``` + ```Shift```  + ```O``` (Letter O not 0)
 
 ### Files
 
