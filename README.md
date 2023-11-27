@@ -149,6 +149,8 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Go to Start/End of Current Word - ```Ctrl``` +  ```Arrow  Left``` or ```Arrow Right ▶️ ``` (Also Used to Navigate Faster Between Words instead of Characters)
 
+- Select Words Going Forwards/Backwards - ```Ctrl``` + ```Shift``` + ```Arrow  Left``` or ```Arrow Right ▶️ ```
+
 ## Formatting
 
 - Code Formatting - ```Ctrl``` + ```K``` then ```Ctrl``` + ```F``` 
