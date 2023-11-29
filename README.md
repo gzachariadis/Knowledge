@@ -1,10 +1,10 @@
-# VS-Codium
+# Knowledge Base for Visual Studio Code
 
-This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my VS-Codium Workspace.
+This repository is used as a virtual storage space for everything I have managed to track down and use over the years, in my effort of creating, optimizing and maintaining my Visual Studio Code Instance,
 
 ## Table of Contents
 
-- [VS-Codium](#vs-codium)
+- [Knowledge Base for Visual Studio Code](#knowledge-base-for-visual-studio-code)
   - [Table of Contents](#table-of-contents)
   - [To-Do](#to-do)
 - [Requirements](#requirements)
