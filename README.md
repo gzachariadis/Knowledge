@@ -5,45 +5,65 @@ This repository is used as a virtual storage space for everything I have managed
 ## Table of Contents
 
 - [VS-Codium](#vs-codium)
+  - [Table of Contents](#table-of-contents)
   - [To-Do](#to-do)
+- [Requirements](#requirements)
 - [Features](#features)
   - [Task Runner](#task-runner)
     - [Resources To-Do](#resources-to-do)
 - [Shortcuts](#shortcuts)
   - [Workflow Shortcuts](#workflow-shortcuts)
-  - [Custom Shortcuts](#custom-shortcuts)
+    - [Navigation](#navigation)
+    - [Menu Bar](#menu-bar)
+    - [Terminal](#terminal)
+  - [Editor Splits](#editor-splits)
   - [Editor Shortcuts](#editor-shortcuts)
-  - [Code Editing Shortcuts](#code-editing-shortcuts)
+  - [Editing Shortcuts](#editing-shortcuts)
     - [Lines](#lines)
     - [Words](#words)
-  - [Code Formatting Shortcuts](#code-formatting-shortcuts)
+    - [Blocks](#blocks)
+  - [Formatting](#formatting)
+    - [Code Navigation](#code-navigation)
+    - [Files](#files)
+    - [Multicursor](#multicursor)
+    - [Uncategorized](#uncategorized)
   - [Resources](#resources)
 - [My Settings](#my-settings)
   - [Fonts](#fonts)
+    - [Settings](#settings)
+    - [Resources](#resources-1)
   - [Editor](#editor)
+    - [Scrollbar](#scrollbar)
+    - [Formatter](#formatter)
     - [Zoom](#zoom)
     - [Rules](#rules)
     - [Indentation](#indentation)
     - [Word Wrap](#word-wrap)
     - [Cursor](#cursor)
     - [Minimap](#minimap)
-  - [Files](#files)
+  - [Files](#files-1)
   - [Outline](#outline)
   - [WorkBench](#workbench)
     - [Preview](#preview)
     - [List](#list)
     - [Window](#window)
     - [Breadcrumbs](#breadcrumbs)
-  - [Snippets](#snippets)
+    - [Editor](#editor-1)
+  - [Explorer](#explorer)
   - [Extensions](#extensions)
-  - [Tips](#tips)
+  - [Snippets](#snippets)
+  - [Extensions](#extensions-1)
+  - [Keyboard Shortcuts](#keyboard-shortcuts)
+  - [Keyboard Shorctus](#keyboard-shorctus)
+    - [Tips](#tips)
+  - [General Tips - Knowledge Base](#general-tips---knowledge-base)
   - [Window Instances](#window-instances)
-  - [Uncategorized](#uncategorized)
+  - [Uncategorized](#uncategorized-1)
   - [Personallization](#personallization)
   - [Integrated Terminal](#integrated-terminal)
-    - [[Oh My Posh](https://ohmyposh.dev/)](#-oh-my-posh--https---ohmyposhdev--)
+    - [Oh My Posh](#oh-my-posh)
       - [Installation](#installation)
-      - [Requirements](#requirements)
+      - [Requirements](#requirements-1)
       - [Theme](#theme)
       - [Update](#update)
       - [Configuration](#configuration)
@@ -51,9 +71,7 @@ This repository is used as a virtual storage space for everything I have managed
         - [Edit Confirguatrion](#edit-confirguatrion)
         - [Troubleshooting Oh My Posh](#troubleshooting-oh-my-posh)
         - [Troubleshooting Powershell](#troubleshooting-powershell)
-  - [Resources](#resources-1)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+  - [Resources](#resources-2)
 
 ## To-Do
 
@@ -62,6 +80,24 @@ This repository is used as a virtual storage space for everything I have managed
 - Configure a Global Hotkey to Use for Shortcuts
 - Configue oh-my-posh - Improve Terminal
 - Create an alias for code in powershell to do codium instead.
+
+# Requirements
+
+- [Microsoft Power Toys](https://learn.microsoft.com/en-us/windows/powertoys/)
+
+I am using a Keychron K2 Mac Keyboard on my setup, which has some language issues with Windows stock American English Layout, so I remap couple of keys.
+
+1. Install PowerToys
+
+2. Go to Keyboard Mapper
+
+3. Add the Following Rule
+
+```
+
+Shift + 3 to # Symbol in All Apps
+
+```
 
 # Features
 
@@ -83,9 +119,13 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Show/Hide Sidebar - `Ctrl` + `B`
 
+- Show/Hide Lower Pane - `Ctrl` + `J`
+
 - Show/Hide Intelisense Autocomplete Feature - `Ctrl` + `Space`
 
 - Zen Mode - `Ctrl` + `K` then `F`
+
+- Reopen/Recover Last Opened File - `Ctrl` + `Shift` + `T`
 
 ### Navigation
 
@@ -97,19 +137,41 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Switch Between Editor Windows - `Ctrl` + `1` to `9` (1 = First Editor, 2 = Second Editor etc. etc.)
 
+- Switch to Previous File - Hold `Ctrl` then `P x 2 (twice)` then let go of `Ctrl`
+
+- Move Editor to Previous Group - `Ctrl` + `Alt` + `Right Arrow`
+
+### Menu Bar
+
+Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter` will open it.
+
+- Open Menu Bar under File Menu - `Alt` + `F`
+- Open Menu Bar under Edit Menu - `ALt` + `E`
+- Open Menu Bar under Selection - `Alt` + `S`
+- Open Menu Bar under View - `Alt` + `V`
+- Open Menu Bar under Terminal = `Alt` + `T`
+
 ### Terminal
 
 - Show/Hide Terminal - `Ctrl` + `'`
 
 - Clear Terminal - `Ctrl` + `L`
 
-## Custom Shortcuts
+- Open New Terminal (when already in One) - `Ctrl` + `Shift` + `'`
 
-- Split Editor Down
+- Navigate Betweeen Open Terminals - `Ctrl` + `Page Up` or `Page Down`
 
-- Split Editor Left
+- Split Terminal (Open Terminals Side to Side) - `Ctrl` + `Shift` + `5`
 
-- Split Editor Right
+- Open New External Terminal - `Ctrl` + `Shift` + `C`
+
+## Editor Splits
+
+- Split Editor Down -
+
+- Split Editor Left -
+
+- Split Editor Right -
 
 ## Editor Shortcuts
 
@@ -132,6 +194,8 @@ This repository is used as a virtual storage space for everything I have managed
 - Select Current Line - `Ctrl` + `L`
 
 - Delete Current Line - `Ctrl` + `Shift` + `K`
+
+- Add New Line (from Anywhere in Line) - `Ctrl` + `Enter`
 
 - Indent/Outdent Current Line - `Ctrl` + `[` or `]`
 
@@ -161,6 +225,10 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Select Words Going Forwards/Backwards - `Ctrl` + `Shift` + `Arrow  Left` or `Arrow Right ▶️ `
 
+### Blocks
+
+- Turn to Block Comment - `Shift` + `Alt` + `A`
+
 <br>
 <br>
 <br>
@@ -176,13 +244,18 @@ This repository is used as a virtual storage space for everything I have managed
 
 - Shift a Block of Code Left or Right - `Shift` + `Tab`
 
-### Navigation
+### Code Navigation
 
 - Go to Definition of a Function - `Ctrl` + `Left Click`
 
 - Search for a Function/Variable Declaration (AKA Go to Symbol) - `Ctrl` + `Shift` + `O` (Letter O not 0)
 
+- Show Categorized Functions/Variable Declarations (AKA Go to Symbol) of File - `Ctrl` + `Shift` + `O` then `:`
+
 - Go to Specific Line - `Ctrl` + `G` then type the Line Number eg. 11
+
+- Search for Symbol in Workspace (Greek) - `Ctrl` + `P` then `Shift` + `3`
+- Search for Symbol in Workspace (English) -
 
 ### Files
 
@@ -202,6 +275,16 @@ This repository is used as a virtual storage space for everything I have managed
 - Create Secondary Cursor on Line Below - Placing a Curson then Holding `Alt` (or `Command`) and `Ctrl` and `Arrow ↓ Down` or `Arrow ↑ Up`.
 
 - Spawn Multiple Cursors - `Ctrl` + `Shift` + `Alt` + `Up Arrow` or `Down Arrow`
+
+- Spawn Multiple Cursors (With Mouse) - Hold `Mouse Wheel` then `Drag Above Lines`
+
+### Uncategorized
+
+- Fold Selected Code Block - `Ctrl` + `K` then `Ctrl` + `,` (Key next to M)
+
+- Unfold Current Cursored Code Block - `Ctrl` + `Shift` + `]`
+
+- Expand Selection by Blocks - `Shift` + `Alt` + `Right Arrow` (Rever Back to previous Block - `Left Arrow`)
 
 <br>
 <br>
@@ -238,6 +321,20 @@ Calculated at `Font Size` times (x) `Line Height` so 14 x 1.3 = 18.2 (will give 
 
 ## Editor
 
+- Editor - Render Whitespace: `boundary`
+
+Shows Space and Tab characters as little SVG dots both at start and at the end of lines.
+
+### Scrollbar
+
+- Editor - Scrollbar - Horizontal: `hidden`
+
+Hides the Horizontal (Down) Scrollbar from the Editor
+
+- Editor - Scrollbar - Vertical: `hidden`
+
+Hides the Verical (Side) Scrollbar from the Editor
+
 ### Formatter
 
 - Editor - Default Formatter: `Prettier - Code formatter`
@@ -256,7 +353,7 @@ Calculated at `Font Size` times (x) `Line Height` so 14 x 1.3 = 18.2 (will give 
 
 - Editor - Rules : `"editor.rulers": [ 120 ]`
 
-Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.
+  Renders a Verical Rule after Certain Number of Monospace Characters. As to say, break up the line after 120 characters or it's not going to be readable.
 
 - Workbench - Color Customizations : `"workbench.colorCustomizations": { "editorRuler.foreground": "#ff4081" }`
 
@@ -302,11 +399,13 @@ When creating a File, it will be by Default a UTF-8 encoding file.
 
 **_ Note to Self, Find a Way to do the same with Encoding as Language or Find a Way when Creating or Editing UTF-16 files to be able to create them using UTF-16 Default Encoding _**
 
-- Files - Auto Save: `after Delay`
+- Files - Auto Save: `after Delay` or another option `on Focus Change` switching between files will trigger it.
 
 - Files - Auto Save Delay: `100`
 
 - Files - Refactoring - Auto Save: ✅
+
+- Files - Hot Exit : `on ExitandWIndowClose`
 
 ## Outline
 
@@ -344,11 +443,42 @@ Enables Smooth Scrolling along Lists and Trees.
 
 Adjusts the Zoom Level on the Whole Window - Original size is 0.
 
+- Window - Menu Bar Visibillity: `Compact`
+
+Compact the Menubar over the File Explorer
+
 ### Breadcrumbs
 
 - Workbench - Breadcrumbs : ❌
 
 Disables Breadcrumbs Fully.
+
+### Editor
+
+- Workbench - Editor - Show Tabs: `single`
+
+That allow only for 1 Tab in the Editor at one time.
+
+- Workbench - Editor - Limit - Per Editor Group: ✅
+
+Controls whether the limit will be Per Editor Group.
+Means you can Multitask by having grips and seperate editors, but each Grid will allow 1 Editor.
+
+- Workbench - Editor - Limit - Value: `1`
+
+Controls the Maximum Number of Open Editors.
+
+## Explorer
+
+- Explorer - Open Editors - Min Visible: `0`
+
+- [Explorer - Open Editors - Visible](https://github.com/microsoft/vscode/issues/187087): `1`
+
+The zero setting was removed recently in favour of using the standard mechanism for hiding a view via its context menu.
+
+## Extensions
+
+- Extensions - Ignore Recommendations: ✅
 
 ## Snippets
 
@@ -366,7 +496,35 @@ Installed
 
 - Python by ms-python
 
-## Tips
+## Keyboard Shortcuts
+
+---- Place File Here ------
+
+## Keyboard Shorctus
+
+### Tips
+
+Find When Clauses Keyboard Shortcuts
+
+` - Open Command Pallet ---> Toggle Developer Tools`
+
+This will open a Developer Options Window
+
+- Open Command Palllet ---> Inspect Context Keys
+
+Will output to console the Context Outputs so you can use on your when clauses for Keybuidings.
+
+## General Tips - Knowledge Base
+
+Settings in VSCode can be Language Specific,
+
+```
+"[markdown]":{
+    "editor.quickSuggestions": false
+  },
+```
+
+Will Disable suggestions only for Markdown Files
 
 ## Window Instances
 
