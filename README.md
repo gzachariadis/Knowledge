@@ -29,10 +29,9 @@ This repository is used as a virtual storage space for everything I have managed
     - [Uncategorized](#uncategorized)
   - [Resources](#resources)
 - [My Settings](#my-settings)
-  - [Fonts](#fonts)
-    - [Settings](#settings)
     - [Resources](#resources-1)
   - [Editor](#editor)
+    - [JSON Only](#json-only)
     - [Scrollbar](#scrollbar)
     - [Formatter](#formatter)
     - [Zoom](#zoom)
@@ -43,6 +42,8 @@ This repository is used as a virtual storage space for everything I have managed
     - [Minimap](#minimap)
   - [Files](#files-1)
   - [Outline](#outline)
+  - [Terminal](#terminal-1)
+  - [Git](#git)
   - [WorkBench](#workbench)
     - [Preview](#preview)
     - [List](#list)
@@ -59,6 +60,8 @@ This repository is used as a virtual storage space for everything I have managed
   - [General Tips - Knowledge Base](#general-tips---knowledge-base)
   - [Window Instances](#window-instances)
   - [Uncategorized](#uncategorized-1)
+  - [Diff Editor](#diff-editor)
+  - [Chat](#chat)
   - [Personallization](#personallization)
   - [Integrated Terminal](#integrated-terminal)
     - [Oh My Posh](#oh-my-posh)
@@ -141,14 +144,20 @@ Shift + 3 to # Symbol in All Apps
 
 - Move Editor to Previous Group - `Ctrl` + `Alt` + `Right Arrow`
 
+- Focus and Move through Breadcrumbs - `Ctrl` + `Shift` + `.` (same as Go to Symbol through Accesibillity - Maybe Fix)
+
 ### Menu Bar
 
 Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter` will open it.
 
 - Open Menu Bar under File Menu - `Alt` + `F`
+
 - Open Menu Bar under Edit Menu - `ALt` + `E`
+
 - Open Menu Bar under Selection - `Alt` + `S`
+
 - Open Menu Bar under View - `Alt` + `V`
+
 - Open Menu Bar under Terminal = `Alt` + `T`
 
 ### Terminal
@@ -179,13 +188,7 @@ Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter`
 
 - Open a Right Side View - `Ctrl` + `\` (next to right shift)
 
-<br>
-<br>
-
-- Change Text Size - `Ctrl` + `+` or `-`
-
-<br>
-<br>
+- Zoom In/Out - `Ctrl` + `+` or `-`
 
 ## Editing Shortcuts
 
@@ -242,7 +245,7 @@ Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter`
 
 - Fold based on Indentation Level - `Ctrl` + `K` then `Ctrl` + `1` to `5` (based on Indentation Level you want to Fold - pressing 2 will fold 3-5)
 
-- Shift a Block of Code Left or Right - `Shift` + `Tab`
+- Unident a Piece of Code One Level (Reverse Tab)- `Shift` + `Tab`
 
 ### Code Navigation
 
@@ -302,18 +305,6 @@ Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter`
 
 # My Settings
 
-## Fonts
-
-### Settings
-
-- Editor - Font Size : `Place Here`
-
-- Editor - Line Height : `Place Here`
-
-Calculated at `Font Size` times (x) `Line Height` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
-
-- Editor - Font Ligatures : `False`
-
 ### Resources
 
 - [Coding Fonts](https://coding-fonts.netlify.app/)
@@ -324,6 +315,58 @@ Calculated at `Font Size` times (x) `Line Height` so 14 x 1.3 = 18.2 (will give 
 - Editor - Render Whitespace: `boundary`
 
 Shows Space and Tab characters as little SVG dots both at start and at the end of lines.
+
+- Editor - Font Size : `Place Here`
+
+- Editor - Line Height : `Place Here`
+
+Calculated at `Font Size` times (x) `Line Height` so 14 x 1.3 = 18.2 (will give a 1.3 Line Height on a 14 pixels Font Size)
+
+- Editor - Font Ligatures : `False`
+
+- Editor - Font Family : `Lotion,Menlo,'Courier New',monospace`
+
+Using Multiple Font Families with comma, sets them up as Redudancies in case the PC doesn't have the specific font installed.
+
+Font Families with Spaces ex. Courier New, Cascadia Code etc. will need to be put inside quotes
+
+- Editor - Line Numbers: `off`
+
+Controls the Display of Line Numbers inside Editor.
+
+- Editor - Cursor Style: `line`
+
+Controls the Cursor Style.
+
+- Editor - Find - [Cursor Move On Type](https://www.youtube.com/watch?v=gnyWgbogJwk): ❌
+
+- Editor - [Accessibility Support](https://www.youtube.com/watch?v=Z779xMbSszg): `off`
+
+### JSON Only
+
+- `"editor.fontWeight": "normal"`
+
+```
+"editor.tokenColorCustomizations": {
+    "comments": "#ffe600",
+    "keywords": "#FF0000",
+    "variables": "#FF0000",
+    "numbers": "#FF0000",
+    "functions": "#FF0000",
+    "strings": "#FF0000",
+    "types": "#FF0000",
+    "textMateRules": [
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#FF0000"
+        }
+      }
+    ]
+  },
+```
+
+Resource: https://www.youtube.com/watch?v=7DlZHZF7P3U
 
 ### Scrollbar
 
@@ -369,6 +412,10 @@ Controls whether Editor Should Render Intent Guides
 
 - Editor - Word Wrap : `off`
 
+Controls if lines should wrap and how.
+
+- Editor - Word Wrap Column : `120`
+
 Wraps Lines of Code Based on Visibillity
 
 ### Cursor
@@ -377,9 +424,9 @@ Wraps Lines of Code Based on Visibillity
 
 Controls the Blinking Animation of the Cursor.
 
-- Editor - Cursor Smooth Caret Animation : `on`
+- Editor - [Cursor Smooth Caret Animation](https://www.youtube.com/watch?v=FCUi_dRU0tY) : `on`
 
-Allows for a small animation as cursor moves from place to place
+Allows for a small animation as cursor moves from place to place.
 
 - Editor - Smooth Scrolling : ✅
 
@@ -419,7 +466,55 @@ When creating a File, it will be by Default a UTF-8 encoding file.
 
 Everything else is OFF.
 
+## Terminal
+
+- Terminal - Integrated - Enable Multi Line Paste Warning : ❌
+
+When this is set to true, trying to paste text with multiple lines will display a dialog asking you whether to continue or not with the paste. When it's set to false, the dialog is not shown and instead the text is pasted right away.
+
+The paste is hnadle by the shell's readline (in case of pwsh).
+
+## Git
+
+- Git - Open Repository in Parent Folders : `prompt`
+
+- Git - [Autofetch](https://www.youtube.com/watch?v=Ng5xRtLVGpo) : `true`
+
+When set to true, commits will automaticall be fetched from repository's DEFAULT REMOTE of the current Git Repository.
+
 ## WorkBench
+
+- Workbench - Color Theme: `Test Input`
+
+- Workbench - Icon Theme: `VSCode Great Icons`
+
+- Workbench - Product Icon Theme: `Tabler Icons`
+
+- Workbench - Status Bar - Visible: ✅
+
+Disabling the Status Bar (Down Bar) will stop Certain Extensions like [Syncing](https://open-vsx.org/extension/nonoroazoro/syncing) from Working.
+
+- Workbench - [Layout Control](https://stackoverflow.com/questions/71725819/how-to-remove-layout-button-in-the-vscode-titlebar): ✅
+
+Control whether the layout control is shown in the custom title bar.
+
+- Workbench - Color Customizations: `Edit in Settings.json`
+
+```
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#0c430ace",
+    "editor.lineHighlightBorder": "#8cd637c3",
+    // "editor.selectionHighlightBorder": "#ff0000",
+    // "editor.selectionHighlightBackground": "#ff0000",
+    // "editor.selectionForeground": "#ff0000",
+    // "editor.selectionBackground": "#ff0000",
+    "editorRuler.foreground": "#79072d"
+  }
+```
+
+- Workbench - Activity Bar - Visible: ❌ (Only in JSON)
+
+``"workbench.activityBar.visible": false,`
 
 ### Preview
 
@@ -443,9 +538,15 @@ Enables Smooth Scrolling along Lists and Trees.
 
 Adjusts the Zoom Level on the Whole Window - Original size is 0.
 
-- Window - Menu Bar Visibillity: `Compact`
+- Window - Menu Bar Visibillity: `Hidden`
 
 Compact the Menubar over the File Explorer
+
+- Window - [Command Center](https://www.facebook.com/CSSWeekly/videos/a-quick-overview-of-the-new-command-center-option-available-in-vs-code-v169enabl/730181864769756/): ❌
+
+- Window - Title : `${remoteName}${seperator}${activeEditorShort}`
+
+Sets the Window Title based on Pattern.
 
 ### Breadcrumbs
 
@@ -475,6 +576,14 @@ Controls the Maximum Number of Open Editors.
 - [Explorer - Open Editors - Visible](https://github.com/microsoft/vscode/issues/187087): `1`
 
 The zero setting was removed recently in favour of using the standard mechanism for hiding a view via its context menu.
+
+- Explorer - Confirm Drag and Drop: ❌
+
+Controls whether the Explorer asks for Confirmation when Draging and Dropping Files and Folders.
+
+- Explorer - Confirm Delete : ❌
+
+Controls whether the Explorer should ask for confirmation when deleting a file via the trash.
 
 ## Extensions
 
@@ -538,6 +647,16 @@ I prefer to set my functions in a different file, seperating logic from function
 - Pressing CTRL + Space spawns Intellisense.
 
 - Pressing Right Click on an Function Reference or Function and Pressing `Rename Symbol` (F2) will change UNIVERSALLY anywhere you used it, the name of the function as well as the references to it.
+
+## Diff Editor
+
+- Diff Editor: Word Wrap : `off`
+
+## Chat
+
+- Chat - Editor - Wrd Wrap: `off`
+
+Controls whether lines should wrap in chat codeblocks.
 
 ## Personallization
 
