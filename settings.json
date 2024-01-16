@@ -1,0 +1,406 @@
+{
+  // ** UNCATEGORIZED SETTINGS **
+  
+  // Disable Recommended Extensions
+  "extensions.ignoreRecommendations": true,
+
+  "workbench.enableExperiments": false,
+
+  "update.showReleaseNotes": false,
+
+  "extensions.autoCheckUpdates": false,
+
+  "npm.fetchOnlinePackageInfo": false,
+
+  // Autosave
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
+
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // Appearance
+  "workbench.colorTheme": "Hack The Box-Lite",
+  "workbench.productIconTheme": "Tabler",
+  "workbench.iconTheme": "vscode-great-icons",
+
+  // Python Specific Settings
+  "[python]": {
+    // Format it both on "Save" and "Paste"
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    // Automatically format code as you type, used for autoindention
+    // https://www.youtube.com/watch?v=R-OwkbcJYSE
+    "editor.formatOnType": true,
+
+    // ** Required Source Control **
+    // Will only format the modifications, not entire file.
+    // https://www.youtube.com/watch?v=ilCFoEhTyM0
+    "editor.formatOnSaveMode": "modifications",
+
+    // Setting YAPF as the default file formatter for Python
+    "editor.defaultFormatter": "eeyore.yapf",
+
+    // Action to perform when "Save" is triggered
+    "editor.codeActionsOnSave": {
+      "source.sortImports": "explicit",
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    }
+  },
+
+  // ** GIT **
+
+  // Git: Autofetch - Automatically fetches latest updates from repo
+  // https://www.youtube.com/watch?v=Ng5xRtLVGpo
+  "git.autofetch": true,
+
+  // Git: Autofetch Period - Fetches latest updates every 3 minutes
+  // https://www.youtube.com/watch?v=1U24-ZiZvts
+  "git.autofetchPeriod": 180,
+
+  // Telemetry
+
+  "telemetry.telemetryLevel": "off",
+
+  // ** FILES **
+
+  // Files > Hot Exit - Controls when to prompt "Save" on unsaved files
+  // https://www.youtube.com/watch?v=XL5cSqJlVVc
+  "files.hotExit": "onExit",
+
+  // ** EDITOR **
+
+  // Setting Default Formatter for Visual Code Studio - Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enabling Formatting files on Save
+  "editor.formatOnSave": true,
+
+  // Enabling Formatting code as I type
+  "editor.formatOnType": true,
+
+  // Render whitespaces only at the end of line
+  "editor.renderWhitespace": "trailing",
+
+  //  Editor > Find : Cursor Move on Type - Don't jump to match location unless triggered.
+  // https://www.youtube.com/watch?v=gnyWgbogJwk
+  "editor.find.cursorMoveOnType": false,
+
+  // Set Font Ligatures to False - Do not render ligatures
+  // https://www.youtube.com/watch?v=Hi1IBwpm_Ls
+  // https://www.youtube.com/watch?v=dJvX-Pb92BQ
+  "editor.fontLigatures": false,
+
+  // Editor: Line Numbers - Do not display line numbers inside editor.
+  // https://www.youtube.com/watch?v=-yk_Bi4wSTQ
+  "editor.lineNumbers": "off",
+
+  // Controls if the UI should run in a mode where it is optimized for screen readers.
+  // Screen readers are software programs that allow blind or visually impaired users
+  // to read text on a screen using devices like speech synthesizer or braille display.
+  // https://www.youtube.com/watch?v=Z779xMbSszg
+  "editor.accessibilitySupport": "off",
+
+  // Render vertical lines in the editor at one or more character columns.
+  // https://www.youtube.com/watch?v=8HCoN1jBG6Y
+  "editor.rulers": [],
+
+  // Color based on properties - keywords, comments, variables, numbers, strings, functions etc. etc.
+  // https://www.youtube.com/watch?v=7DlZHZF7P3U
+  // https://www.youtube.com/watch?v=0iW-mp7qwwA
+  "editor.tokenColorCustomizations": {
+    "comments": "#ffffff"
+  },
+
+  // Color based on semantics - keywords, methods, variables, numbers etc. etc.
+  // https://www.youtube.com/watch?v=vthJRp8jPkw
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "method": "#ff0000"
+    }
+  },
+
+  // Editor > Scrollbar: Horizontal - Hides the Horizontal (Down) Scrollbar from the Editor
+  // https://www.youtube.com/watch?v=xt-Jp8a7mXI
+  "editor.scrollbar.horizontal": "hidden",
+
+  // Editor > Scrollbar: Vertical - Hides the Vertical (Side) Scrollbar from the Editor
+  // https://www.youtube.com/watch?v=xt-Jp8a7mXI
+  "editor.scrollbar.vertical": "hidden",
+
+  // Editor: Mouse Wheel Zoom
+  // https://www.youtube.com/watch?v=zdGMsWudiWE
+  "editor.mouseWheelZoom": true,
+
+  // Editor: Mouse Wheel Scroll Sensitivity (Default - 1.0) - I find 0.5 makes for smoother scrolling
+  "editor.mouseWheelScrollSensitivity": 0.5,
+
+  // Editor > Guides: Bracket Pairs Horizontal - Disables horizontal bracket pair guides.
+  // https://www.youtube.com/watch?v=4UXlkUo-emY
+  "editor.guides.bracketPairsHorizontal": false,
+
+  // Editor > Guides: Highlight Active Bracket Pair - Don't highlight active bracket pair
+  "editor.guides.highlightActiveBracketPair": false,
+
+  // Editor > Bracket Pair Colorization - Enable bracket colorization
+  "editor.bracketPairColorization.enabled": true,
+
+  // Editor > Word Wrap - Control how lines should wrap.
+  // Don't change how lines are written to file just how they formatted.
+  // https://www.youtube.com/watch?v=3SNUxn1Cn1o
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+
+  // Editor > Cursor Blinking - Controls cursor render animation
+  // https://www.youtube.com/watch?v=Hms3gUBKaVQ
+  "editor.cursorBlinking": "phase",
+
+  // Editor > Cursor Smooth Caret Animation - Controls cursor move animation
+  // https://www.youtube.com/watch?v=FCUi_dRU0tY
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // Editor > Smooth Scrolling - Makes scrolling slower but "smoother"
+  // https://www.youtube.com/watch?v=W0xr0cuFfG4
+  "editor.smoothScrolling": true,
+
+  // Editor > Minimap: Enabled - Disables Minimap
+  // https://www.youtube.com/watch?v=rujmKS0XrzU
+  "editor.minimap.enabled": false,
+
+  // Editor > Minimap: Max Column - Limits the minimap width
+  "editor.minimap.maxColumn": 0,
+
+  // Editor > Minimap: Render Characters - Disable rendering characters
+  // https://www.youtube.com/watch?v=f1TTFWJKWKc
+  "editor.minimap.renderCharacters": false,
+
+  // ** WORKBENCH **
+
+  "workbench.tree.renderIndentGuides": "always",
+
+  // Workbench > Editor: Enable Preview from Quick Open
+  // Opening a fie from quick open, will open it in Preview mode.
+  // https://www.youtube.com/watch?v=yLsnGyh7nL8
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+
+  // Workbench > Editor: Enable Preview - Disable Preview Mode
+  // https://www.youtube.com/shorts/d_2I3gDofCA
+  "workbench.editor.enablePreview": false,
+
+  // WorkDouble Click to Open Files
+  // https://www.youtube.com/shorts/d_2I3gDofCA
+  "workbench.list.openMode": "doubleClick",
+
+  // Workbench > Layout Control: Enabled - Disable layout control button
+  // https://www.youtube.com/watch?v=Tqt2Q1Mteqg
+  // https://stackoverflow.com/questions/71725819/how-to-remove-layout-button-in-the-vscode-titlebar
+  "workbench.layoutControl.enabled": false,
+
+  // Workbench > Layout Control: Type
+  "workbench.layoutControl.type": "toggles",
+
+  // Workbench > Sidebar: Location - Show Sidebar on the Right
+  "workbench.sideBar.location": "right",
+
+  // Workbench: Startup Editor - Show Nothing on App Startup.
+  "workbench.startupEditor": "none",
+
+  // Workbench > Activity Bar: Location - Hidden
+  // https://www.youtube.com/watch?v=9ePzP0xvgoY
+  // https://www.youtube.com/watch?v=xy9RFJ-NPHc
+  "workbench.activityBar.location": "hidden",
+
+  // Workbench > List: Smooth Scrolling - Apply smooth scrolling to trees and lists
+  // https://github.com/microsoft/vscode/issues/99848
+  "workbench.list.smoothScrolling": true,
+
+  // Workbench > Editor: Show Tabs - Only show one tab per Editor
+  // https://www.youtube.com/watch?v=BSbYYrN3Zzw
+  "workbench.editor.showTabs": "single",
+
+  // Workbench > Editor Limit: Value - Set Editor Limit to 1
+  // https://www.youtube.com/watch?v=i2iRfgbB2zY
+  "workbench.editor.limit.value": 1,
+
+  // Workbench > Editor Limit: Per Editor Group - Apply Limit Per Editor Group
+  // https://www.youtube.com/watch?v=i2iRfgbB2zY
+  "workbench.editor.limit.perEditorGroup": true,
+
+  // Workbench > Editor Limit: Enabled - Limits for Editors Enabled
+  "workbench.editor.limit.enabled": true,
+
+  //  ** WINDOW **
+
+  // Window: Menu Bar Visibillity - Set Vissibility of Menu bar to Toggle
+  // Pressing ALT brings focus to the menubar
+  // https://www.youtube.com/watch?v=bpXmCdh-FzM
+  "window.menuBarVisibility": "toggle",
+
+  // Windows > Custom Menu Bar Alt Focus
+  "window.customMenuBarAltFocus": false,
+
+  // Window > Command Center - Disables Window Title to Interactive Command Pallet
+  // https://www.facebook.com/CSSWeekly/videos/a-quick-overview-of-the-new-command-center-option-available-in-vs-code-v169enabl/730181864769756/
+  "window.commandCenter": false,
+
+  // Window: Title - Sets the title of the Window
+  "window.title": "${folderName} - ${remoteName}${seperator}${activeEditorShort}",
+
+  // ** FEATURES **
+
+  // ** EXPLORER **
+
+  // Explorer > Open Editors > Visible
+  // List of editors to show on the "Open Editors" in Activity Bar
+  // I have it disabled anyway...
+  // https://www.youtube.com/watch?v=OO1ZzNlO8qg
+  // https://github.com/microsoft/vscode/issues/187087
+  "explorer.openEditors.visible": 1,
+
+  // Explorer > Confirm Drag & Drop
+  // Disable Confirmation when Draging and Dropping Files and Folders.
+  // https://www.youtube.com/watch?v=M8tnPsKcDRo
+  "explorer.confirmDragAndDrop": false,
+
+  // Explorer > Confirm Delete
+  // Disable Confirmation when Deleting Files and Folders.
+  // https://www.youtube.com/watch?v=2VywHU3iAbU
+  "explorer.confirmDelete": false,
+
+  // ** BREADCRUMS **
+
+  // Disable Breadcrums Entirely
+  "breadcrumbs.enabled": false,
+
+  // Breadcrumbs: File Path - Whether and how file path are shown in breadcrumbs
+  "breadcrumbs.filePath": "off",
+
+  // Visibillity Parameters
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showEnums": false,
+
+  // Breadcrumbs > Symbol Path - Show only last symbol
+  "breadcrumbs.symbolPath": "last",
+
+  // Notebook > Breadcrumbs: Show Code Cells - Disable notebook breadcrumbs
+  "notebook.breadcrumbs.showCodeCells": false,
+
+  // Breadcrumbs > Icons - Disable icons
+  "breadcrumbs.icons": false,
+
+  // ** OUTLINE **
+
+  // Visibillity Parameters
+  // Enabled - Functions & Methods
+
+  "outline.showArrays": false,
+  "outline.showBooleans": false,
+  "outline.showConstants": false,
+  "outline.showConstructors": false,
+  "outline.showEnumMembers": false,
+  "outline.showEnums": false,
+  "outline.showEvents": false,
+  "outline.showFiles": false,
+  "outline.showInterfaces": false,
+  "outline.showKeys": false,
+  "outline.showNamespaces": false,
+  "outline.showNull": false,
+  "outline.showNumbers": false,
+  "outline.showObjects": false,
+  "outline.showOperators": false,
+  "outline.showPackages": false,
+  "outline.showProperties": false,
+  "outline.showStrings": false,
+  "outline.showStructs": false,
+  "outline.showTypeParameters": false,
+  "outline.showVariables": false,
+  "outline.showFields": false,
+  "outline.showClasses": false,
+  "outline.showModules": false,
+
+  // Disable Errors and Warnings from Outline
+  "outline.problems.enabled": false,
+  "outline.problems.colors": false,
+  "outline.problems.badges": false,
+
+  // ** FORMATTING **
+
+  // YAPF formatter
+  "yapf.showNotifications": "always",
+  "yapf.importStrategy": "fromEnvironment",
+
+  // ** EXTENSIONS **
+
+  // Discord Extension
+  "vscord.app.name": "VSCodium",
+  "vscord.status.problems.enabled": false,
+  "vscord.app.id": "VSCodium",
+  "vscord.status.state.text.editing": "under {workspace} in {Lang}",
+  "vscord.status.details.text.editing": "Working on {file_name}",
+  "vscord.status.details.text.idle": "Working on {workspace}",
+  "vscord.status.image.large.debugging.text": "",
+  "vscord.status.state.text.viewing": "under {workspace} in {Lang}",
+  "vscord.status.details.text.debugging": "Working on {file_name}{file_extension}",
+  "vscord.status.details.text.noWorkSpaceText": "Working on {git_repo}",
+  "vscord.status.details.text.viewing": "Working on {file_name}",
+  "vscord.status.state.text.debugging": "under {workspace} in {Lang}",
+  "vscord.status.state.text.noWorkspaceFound": "under {git_repo}",
+  "vscord.status.image.large.editing.text": "",
+  "vscord.status.image.large.idle.text": "",
+  "vscord.status.image.large.viewing.text": "",
+  "vscord.status.image.small.debugging.text": "",
+  "vscord.status.image.small.editing.text": "",
+  "vscord.status.image.small.viewing.text": "",
+  "vscord.status.image.small.notInFile.text": "",
+  "vscord.status.image.small.idle.text": "",
+  "vscord.status.image.large.notInFile.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
+  "vscord.status.buttons.button2.enabled": true,
+  "vscord.status.buttons.button2.git.active.enabled": true,
+  "vscord.status.buttons.button2.git.idle.enabled": true,
+  "vscord.status.buttons.button2.git.inactive.enabled": true,
+  "vscord.status.buttons.button2.idle.enabled": true,
+  "vscord.status.buttons.button2.inactive.enabled": true,
+  "vscord.status.buttons.button2.git.inactive.label": "Github Profile",
+  "vscord.status.buttons.button2.git.inactive.url": "https://github.com/gzachariadis",
+  "vscord.status.buttons.button2.idle.label": "Github Profile",
+  "vscord.status.buttons.button2.idle.url": "https://github.com/gzachariadis",
+  "vscord.status.buttons.button2.inactive.label": "Github Profile",
+  "vscord.status.buttons.button2.inactive.url": "https://github.com/gzachariadis",
+  "vscord.status.buttons.button2.git.idle.label": "Github Profile",
+  "vscord.status.buttons.button2.git.idle.url": "https://github.com/gzachariadis",
+  "vscord.status.buttons.button2.git.active.label": "Github Profile",
+  "vscord.status.buttons.button2.git.active.url": "https://github.com/gzachariadis",
+  "vscord.status.buttons.button2.active.label": "Github Profile",
+  "vscord.status.buttons.button2.active.url": "https://github.com/gzachariadis",
+  "vscord.status.image.large.idle.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
+  "vscord.status.image.large.debugging.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
+  "vscord.status.idle.resetElapsedTime": true,
+  "vscord.status.idle.timeout": 600,
+  "vscord.status.details.text.notInFile": "Currently Not in File.",
+  "vscord.status.details.idle.enabled": false,
+  "vscord.status.state.text.idle": "1",
+  "vscord.status.state.text.notInFile": "under {workspace}",
+  "vscord.status.buttons.button1.enabled": false,
+  "vscord.status.buttons.button2.active.enabled": true
+  // ----------------------------------------------------------------------------
+}
