@@ -312,9 +312,9 @@ Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter`
 
 ## Editor
 
-- Editor - Render Whitespace: `boundary`
-
-Shows Space and Tab characters as little SVG dots both at start and at the end of lines.
+- Editor - Render Whitespace: `trailing` - Shows Space or Tab characters as little dots at the end of lines. Makes it easier to spot trailing whitespaces.
+  
+- Editor - Experimental WHitespace Rendering: `svg` - Can't be set in JSON format.
 
 - Editor - Font Size : `Place Here`
 
