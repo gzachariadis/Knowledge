@@ -1,6 +1,6 @@
 {
   // ** UNCATEGORIZED SETTINGS **
-  
+
   // Disable Recommended Extensions
   "extensions.ignoreRecommendations": true,
 
@@ -19,7 +19,7 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
 
   // Appearance
-  "workbench.colorTheme": "Hack The Box-Lite",
+  "workbench.colorTheme": "Hack The Box",
   "workbench.productIconTheme": "Tabler",
   "workbench.iconTheme": "vscode-great-icons",
 
@@ -39,60 +39,127 @@
     "editor.formatOnSaveMode": "modifications",
 
     // Setting YAPF as the default file formatter for Python
+    // https://www.youtube.com/watch?v=raD0uYPE_UU
     "editor.defaultFormatter": "eeyore.yapf",
 
     // Action to perform when "Save" is triggered
+    // https://www.youtube.com/watch?v=Le60qa5GkJQ [REQUIRES ATTENTION]
     "editor.codeActionsOnSave": {
+      //
       "source.sortImports": "explicit",
-      "source.organizeImports": "explicit",
-      "source.fixAll": "explicit"
+
+      //
+      "source.organizeImports": "always",
+
+      // Based on your LINTER - would always enforce automatic fixes
+      // https://www.youtube.com/watch?v=gj11Z9QIfJU
+      "source.fixAll": "always"
     }
   },
 
   // ** GIT **
 
-  // Git: Autofetch - Automatically fetches latest updates from repo
+  // Automatically fetches latest updates from repos
   // https://www.youtube.com/watch?v=Ng5xRtLVGpo
   "git.autofetch": true,
 
-  // Git: Autofetch Period - Fetches latest updates every 3 minutes
+  // Fetch latest updates every 3 minutes
   // https://www.youtube.com/watch?v=1U24-ZiZvts
   "git.autofetchPeriod": 180,
 
-  // Telemetry
-
+  // ** TELEMETRY **
   "telemetry.telemetryLevel": "off",
 
   // ** FILES **
 
-  // Files > Hot Exit - Controls when to prompt "Save" on unsaved files
+  // Prompt to save unsaved files on program exit.
   // https://www.youtube.com/watch?v=XL5cSqJlVVc
   "files.hotExit": "onExit",
 
   // ** EDITOR **
 
   // Setting Default Formatter for Visual Code Studio - Prettier
+  // https://www.youtube.com/watch?v=raD0uYPE_UU
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // Enabling Formatting files on Save
+  // Disables Automatic Indentation Detecting
+  // https://www.youtube.com/watch?v=vGsXNImZz4A
+  "editor.detectIndentation": false,
+
+  // Do not insert Spaces when tab is pressed
+  // Enforces that tab = add tab  and space = add space.
+  // Ignored if editor.detectIndentation is on.
+  "editor.insertSpaces": false,
+
+  // The number of spaces a tab is equal to, GLOBALLY.
+  // Set for each language specifically to overwrite.
+  // Ignored if editor.detectIndentation is on.
+  "editor.tabSize": 2,
+
+  // Format files on "Save"
+  // https://www.youtube.com/watch?v=zJ8EjUqx1hg
   "editor.formatOnSave": true,
 
-  // Enabling Formatting code as I type
+  // Formatting files as I type
+  // [TODOOOOOOOOOOOOOOOOOOOO]
+  // https://www.youtube.com/watch?v=6n-WMrSlCFw
+  // https://www.youtube.com/watch?v=m-3Symq2-V8
   "editor.formatOnType": true,
 
   // Render whitespaces only at the end of line
   "editor.renderWhitespace": "trailing",
 
-  //  Editor > Find : Cursor Move on Type - Don't jump to match location unless triggered.
+  // Disable Drag and Drop Selection inside Editor
+  // https://www.youtube.com/watch?v=dJiZ1Rv2s5I
+  "editor.dragAndDrop": false,
+
+  // Copying without a selection, defaults to current cursor line
+  // https://www.youtube.com/watch?v=NAokkP8jJkU
+  "editor.emptySelectionClipboard": true,
+
+  // Mouse Wheel Zoom - Enable
+  // https://www.youtube.com/watch?v=zdGMsWudiWE
+  "editor.mouseWheelZoom": true,
+
+  // Mouse Wheel Scroll Sensitivity (Default - 1.0)
+  // https://www.youtube.com/watch?v=7Kz2zlK8Iok
+  "editor.mouseWheelScrollSensitivity": 0.4,
+
+  // Scrolling while holding Alt - multiplies scroll speed x5
+  // Useful because my scrolling speed is very low intentionally.
+  // https://www.youtube.com/watch?v=keOO910u9UI
+  "editor.fastScrollSensitivity": 5,
+
+  // Decides when to autoclose brackets ([],{})
+  // https://www.youtube.com/watch?v=VICsBFsJT1s
+  "editor.autoClosingBrackets": "beforeWhitespace",
+
+  // Decides when to autoclose Quotes ("",'')
+  // https://www.youtube.com/watch?v=l5lFt4YFdcg
+  "editor.autoClosingQuotes": "beforeWhitespace",
+
+  // Type over a closing parenthesis only if automatically generated
+  // https://www.youtube.com/watch?v=SucNhPsTWH0
+  "editor.autoClosingOvertype": "auto",
+
+  // Controls whether to auto adjust indentation when type,paste or move lines.
+  // https://www.youtube.com/watch?v=I1W7ExCYBz4
+  "editor.autoIndent": "full",
+
+  // Automatically surround selections
+  // https://www.youtube.com/watch?v=fpnPLCyqsKQ
+  "editor.autoSurround": "languageDefined",
+
+  // When Searching, don't jump to matches unless triggered.
   // https://www.youtube.com/watch?v=gnyWgbogJwk
   "editor.find.cursorMoveOnType": false,
 
-  // Set Font Ligatures to False - Do not render ligatures
+  // Disable Ligatures
   // https://www.youtube.com/watch?v=Hi1IBwpm_Ls
   // https://www.youtube.com/watch?v=dJvX-Pb92BQ
   "editor.fontLigatures": false,
 
-  // Editor: Line Numbers - Do not display line numbers inside editor.
+  // Don't disable line numbers.
   // https://www.youtube.com/watch?v=-yk_Bi4wSTQ
   "editor.lineNumbers": "off",
 
@@ -121,57 +188,71 @@
     }
   },
 
-  // Editor > Scrollbar: Horizontal - Hides the Horizontal (Down) Scrollbar from the Editor
+  // Hides the Horizontal (Down) Scrollbar from the Editor
   // https://www.youtube.com/watch?v=xt-Jp8a7mXI
   "editor.scrollbar.horizontal": "hidden",
 
-  // Editor > Scrollbar: Vertical - Hides the Vertical (Side) Scrollbar from the Editor
+  // Hides the Vertical (Side) Scrollbar from the Editor
   // https://www.youtube.com/watch?v=xt-Jp8a7mXI
   "editor.scrollbar.vertical": "hidden",
 
-  // Editor: Mouse Wheel Zoom
-  // https://www.youtube.com/watch?v=zdGMsWudiWE
-  "editor.mouseWheelZoom": true,
-
-  // Editor: Mouse Wheel Scroll Sensitivity (Default - 1.0) - I find 0.5 makes for smoother scrolling
-  "editor.mouseWheelScrollSensitivity": 0.5,
-
-  // Editor > Guides: Bracket Pairs Horizontal - Disables horizontal bracket pair guides.
+  // Disables horizontal bracket pair guides.
   // https://www.youtube.com/watch?v=4UXlkUo-emY
   "editor.guides.bracketPairsHorizontal": false,
 
-  // Editor > Guides: Highlight Active Bracket Pair - Don't highlight active bracket pair
+  // Disable highlighting of active bracket pair
   "editor.guides.highlightActiveBracketPair": false,
 
-  // Editor > Bracket Pair Colorization - Enable bracket colorization
+  // Enable bracket colorization
+  // https://www.youtube.com/watch?v=4UXlkUo-emY
   "editor.bracketPairColorization.enabled": true,
 
-  // Editor > Word Wrap - Control how lines should wrap.
-  // Don't change how lines are written to file just how they formatted.
+  // Wrap words after 120 characters
   // https://www.youtube.com/watch?v=3SNUxn1Cn1o
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
 
-  // Editor > Cursor Blinking - Controls cursor render animation
+  // Sets cursor render animation to "Phase"
   // https://www.youtube.com/watch?v=Hms3gUBKaVQ
-  "editor.cursorBlinking": "phase",
+  // https://www.youtube.com/watch?v=q1wAnW_yFDU
+  "editor.cursorBlinking": "smooth",
 
-  // Editor > Cursor Smooth Caret Animation - Controls cursor move animation
+  // Enable Smooth Cursor Animation
   // https://www.youtube.com/watch?v=FCUi_dRU0tY
+  // https://www.youtube.com/watch?v=c-6AzCZ6mjw
   "editor.cursorSmoothCaretAnimation": "on",
 
-  // Editor > Smooth Scrolling - Makes scrolling slower but "smoother"
+  // Make scrolling slower but "smoother"
   // https://www.youtube.com/watch?v=W0xr0cuFfG4
   "editor.smoothScrolling": true,
 
-  // Editor > Minimap: Enabled - Disables Minimap
+  // Cursor Style
+  // https://www.youtube.com/watch?v=Nki8tVQ82_8
+  "editor.cursorStyle": "underline",
+
+  // Works only when "cursorStyle" is set to "line"
+  // https://www.youtube.com/watch?v=-S-clq9jvyk
+  "editor.cursorWidth": 2,
+
+  // Move the window up or down when the cursor is exactly X lines from the top/bottom
+  // https://www.youtube.com/watch?v=PQAuhE6bBEc
+  "editor.cursorSurroundingLines": 30,
+
+  // Decided when "cursor surrouding lines" policy should be enforced
+  // Default = don't move view with cursor , but move with keyboard
+  // All = move with both - All causes view to move when you click (not wanted)
+  // All also causes text to be selected as you move to a different view - bug
+  "editor.cursorSurroundingLinesStyle": "default",
+
+  // Disables Minimap
   // https://www.youtube.com/watch?v=rujmKS0XrzU
   "editor.minimap.enabled": false,
 
-  // Editor > Minimap: Max Column - Limits the minimap width
+  // Limits the minimap width
+  // https://www.youtube.com/watch?v=S6WT8bFsnKE
   "editor.minimap.maxColumn": 0,
 
-  // Editor > Minimap: Render Characters - Disable rendering characters
+  // Disable rendering characters
   // https://www.youtube.com/watch?v=f1TTFWJKWKc
   "editor.minimap.renderCharacters": false,
 
@@ -179,12 +260,11 @@
 
   "workbench.tree.renderIndentGuides": "always",
 
-  // Workbench > Editor: Enable Preview from Quick Open
   // Opening a fie from quick open, will open it in Preview mode.
   // https://www.youtube.com/watch?v=yLsnGyh7nL8
   "workbench.editor.enablePreviewFromQuickOpen": true,
 
-  // Workbench > Editor: Enable Preview - Disable Preview Mode
+  // Disable Preview Mode
   // https://www.youtube.com/shorts/d_2I3gDofCA
   "workbench.editor.enablePreview": false,
 
@@ -197,73 +277,68 @@
   // https://stackoverflow.com/questions/71725819/how-to-remove-layout-button-in-the-vscode-titlebar
   "workbench.layoutControl.enabled": false,
 
-  // Workbench > Layout Control: Type
+  // Toggle Layout Control
   "workbench.layoutControl.type": "toggles",
 
-  // Workbench > Sidebar: Location - Show Sidebar on the Right
+  // Show Sidebar on the Right
   "workbench.sideBar.location": "right",
 
-  // Workbench: Startup Editor - Show Nothing on App Startup.
+  // Show Nothing on App Startup.
   "workbench.startupEditor": "none",
 
-  // Workbench > Activity Bar: Location - Hidden
+  // Activity Bar Location - Hidden
   // https://www.youtube.com/watch?v=9ePzP0xvgoY
   // https://www.youtube.com/watch?v=xy9RFJ-NPHc
   "workbench.activityBar.location": "hidden",
 
-  // Workbench > List: Smooth Scrolling - Apply smooth scrolling to trees and lists
+  // Apply smooth scrolling to trees and lists
   // https://github.com/microsoft/vscode/issues/99848
   "workbench.list.smoothScrolling": true,
 
-  // Workbench > Editor: Show Tabs - Only show one tab per Editor
+  // Show one tab per Editor
   // https://www.youtube.com/watch?v=BSbYYrN3Zzw
   "workbench.editor.showTabs": "single",
 
-  // Workbench > Editor Limit: Value - Set Editor Limit to 1
+  // Set Editor Limit to 1 per group
   // https://www.youtube.com/watch?v=i2iRfgbB2zY
   "workbench.editor.limit.value": 1,
 
-  // Workbench > Editor Limit: Per Editor Group - Apply Limit Per Editor Group
+  // Apply Editor Limit on Per Editor Group basis
   // https://www.youtube.com/watch?v=i2iRfgbB2zY
   "workbench.editor.limit.perEditorGroup": true,
 
-  // Workbench > Editor Limit: Enabled - Limits for Editors Enabled
+  // Enable Editor Limit
   "workbench.editor.limit.enabled": true,
 
   //  ** WINDOW **
 
-  // Window: Menu Bar Visibillity - Set Vissibility of Menu bar to Toggle
-  // Pressing ALT brings focus to the menubar
+  // Set Vissibility of Menu Bar to Toggle
+  // Press ALT to bring focus to the menubar
   // https://www.youtube.com/watch?v=bpXmCdh-FzM
   "window.menuBarVisibility": "toggle",
 
-  // Windows > Custom Menu Bar Alt Focus
+  // Custom Menu Bar Alt Focus
   "window.customMenuBarAltFocus": false,
 
-  // Window > Command Center - Disables Window Title to Interactive Command Pallet
+  // Disable Window Title to enable Interactive Command Pallet
   // https://www.facebook.com/CSSWeekly/videos/a-quick-overview-of-the-new-command-center-option-available-in-vs-code-v169enabl/730181864769756/
   "window.commandCenter": false,
 
-  // Window: Title - Sets the title of the Window
+  // Set the Title of the Window
   "window.title": "${folderName} - ${remoteName}${seperator}${activeEditorShort}",
 
   // ** FEATURES **
 
   // ** EXPLORER **
 
-  // Explorer > Open Editors > Visible
-  // List of editors to show on the "Open Editors" in Activity Bar
-  // I have it disabled anyway...
+  // Show only current editor in "Open Editors" in Activity Bar [Disabled]
   // https://www.youtube.com/watch?v=OO1ZzNlO8qg
-  // https://github.com/microsoft/vscode/issues/187087
   "explorer.openEditors.visible": 1,
 
-  // Explorer > Confirm Drag & Drop
   // Disable Confirmation when Draging and Dropping Files and Folders.
   // https://www.youtube.com/watch?v=M8tnPsKcDRo
   "explorer.confirmDragAndDrop": false,
 
-  // Explorer > Confirm Delete
   // Disable Confirmation when Deleting Files and Folders.
   // https://www.youtube.com/watch?v=2VywHU3iAbU
   "explorer.confirmDelete": false,
@@ -271,12 +346,25 @@
   // ** BREADCRUMS **
 
   // Disable Breadcrums Entirely
+  // https://www.youtube.com/watch?v=lajq51wRjGA
+  // https://www.youtube.com/watch?v=fHhSw3xDIE4
   "breadcrumbs.enabled": false,
 
-  // Breadcrumbs: File Path - Whether and how file path are shown in breadcrumbs
+  // Sets whether file paths are to be shown in breadcrumbs
+  // https://www.youtube.com/watch?v=-mM-SZsLCK8
   "breadcrumbs.filePath": "off",
 
-  // Visibillity Parameters
+  // Disable Breadcrumb icons
+  // https://www.youtube.com/watch?v=IlLxU3_Py1Q
+  "breadcrumbs.icons": false,
+
+  // Breadcrumbs Individual Visibillity Parameters
+  // https://www.youtube.com/watch?v=C3czWbFvwXo
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showFiles": false,
   "breadcrumbs.showArrays": false,
   "breadcrumbs.showBooleans": false,
   "breadcrumbs.showClasses": false,
@@ -299,20 +387,20 @@
   "breadcrumbs.showObjects": false,
   "breadcrumbs.showEnums": false,
 
-  // Breadcrumbs > Symbol Path - Show only last symbol
-  "breadcrumbs.symbolPath": "last",
+  // Disable Symbols in Breadcrumbs
+  // https://www.youtube.com/watch?v=i8xwubpXGs0
+  "breadcrumbs.symbolPath": "off",
 
-  // Notebook > Breadcrumbs: Show Code Cells - Disable notebook breadcrumbs
+  // Sort Symbols by Name [Disabled]
+  // https://www.youtube.com/watch?v=vFky6OmH2fA
+  "breadcrumbs.symbolSortOrder": "name",
+
+  // Disable Notebook Breadcrumbs
   "notebook.breadcrumbs.showCodeCells": false,
-
-  // Breadcrumbs > Icons - Disable icons
-  "breadcrumbs.icons": false,
 
   // ** OUTLINE **
 
   // Visibillity Parameters
-  // Enabled - Functions & Methods
-
   "outline.showArrays": false,
   "outline.showBooleans": false,
   "outline.showConstants": false,
