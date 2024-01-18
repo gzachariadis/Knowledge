@@ -210,6 +210,8 @@ Pressing `Alt` anywhere in VS Code, will set forus to Menu Bar, pressing `Enter`
 
 - Go to the end of Line - `End`
 
+- Add a new line below, even if you in the middle of a line - `Ctrl` + `Enter`
+
 <br>
 
 - Highlight Everything from Cursor to End of Line - `Shift` + `End`
