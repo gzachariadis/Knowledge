@@ -1,0 +1,157 @@
+{
+    // ** LANGUAGE SPECIFIC SETTINGS **
+
+    "[clojure]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    
+    "[coffeescript]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 2500
+    },
+    
+    "[css]": {
+        "cSpell.fixSpellingWithRenameProvider": false,
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    
+    "[dockerfile]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    },
+    
+    "[fsharp]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    
+    "[git-commit]": {
+        "editor.rulers": [
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    
+    "[git-rebase]": {
+        "workbench.editor.restoreViewState": false
+    },
+    
+    "[go]": {
+        "editor.insertSpaces": false
+    },
+    
+    "[handlebars]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[html]": {
+        "editor.formatOnType": true,
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[jade]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500
+    },
+
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[less]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+    
+    "[markdown]": {
+        "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
+        "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+        "cSpell.fixSpellingWithRenameProvider": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "off",
+            "strings": "off"
+        },
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordWrap": "on"
+    },
+    
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
+
+    // ** PYTHON **
+    "[python]": {
+ 
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": true,                 // https://www.youtube.com/watch?v=R-OwkbcJYSE
+
+        "editor.formatOnSaveMode": "modifications",  // https://www.youtube.com/watch?v=ilCFoEhTyM0
+
+        "editor.defaultFormatter": "eeyore.yapf",    // https://www.youtube.com/watch?v=raD0uYPE_UU
+
+        // [REQUIRES ATTENTION]
+        "editor.codeActionsOnSave": {                // https://www.youtube.com/watch?v=Le60qa5GkJQ 
+
+            "source.sortImports": "always",          // https://youtu.be/svCTgx6abFc & https://youtu.be/RplG4aWnZQo
+
+            "source.organizeImports": "always",
+
+            "source.fixAll": "always"                // https://www.youtube.com/watch?v=gj11Z9QIfJU
+        },
+    },
+    
+    "[scminput]": {
+        "cSpell.fixSpellingWithRenameProvider": false
+    },
+    
+    "[scss]": {
+        "cSpell.fixSpellingWithRenameProvider": false,
+        "editor.suggest.insertMode": "replace"
+    },
+    
+    "[search-result]": {
+        "editor.lineNumbers": "off"
+    },
+    
+    "[shellscript]": {
+        "files.eol": "\n"
+    },
+
+    "[yaml]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.autoIndent": "advanced",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    // --------------------------------------------------------------------
+    
