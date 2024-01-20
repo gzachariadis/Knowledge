@@ -1,14 +1,9 @@
 {
   // ** UNCATEGORIZED SETTINGS **
 
-  // Disable Recommended Extensions
-  "extensions.ignoreRecommendations": true,
-
   "workbench.enableExperiments": false,
 
   "update.showReleaseNotes": false,
-
-  "extensions.autoCheckUpdates": false,
 
   "npm.fetchOnlinePackageInfo": false,
 
@@ -19,7 +14,7 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
 
   // Appearance
-  "workbench.colorTheme": "Hack The Box",
+  "workbench.colorTheme": "Kanagawa Wave",
   "workbench.productIconTheme": "Tabler",
   "workbench.iconTheme": "vscode-great-icons",
 
@@ -89,16 +84,14 @@
   // Do not insert Spaces when tab is pressed
   // Enforces that tab = add tab  and space = add space.
   // Ignored if editor.detectIndentation is on.
+  // https://www.youtube.com/watch?v=TNwgWCoFPok
   "editor.insertSpaces": false,
 
   // The number of spaces a tab is equal to, GLOBALLY.
   // Set for each language specifically to overwrite.
   // Ignored if editor.detectIndentation is on.
+  // https://youtu.be/oEAr7bSQkpo
   "editor.tabSize": 2,
-
-  // Format files on "Save"
-  // https://www.youtube.com/watch?v=zJ8EjUqx1hg
-  "editor.formatOnSave": true,
 
   // Formatting files as I type
   // [TODOOOOOOOOOOOOOOOOOOOO]
@@ -106,8 +99,48 @@
   // https://www.youtube.com/watch?v=m-3Symq2-V8
   "editor.formatOnType": true,
 
+  "editor.codeActionsOnSave": {
+    //
+    "source.sortImports": "explicit",
+
+    //
+    "source.organizeImports": "always",
+
+    // Based on your LINTER - would always enforce automatic fixes
+    // https://www.youtube.com/watch?v=gj11Z9QIfJU
+    "source.fixAll": "always"
+  },
+
+  // Disable showing codelens references inside Editor
+  // https://www.youtube.com/watch?v=JNT9P5u5nIA
+  "editor.codeLens": false,
+
+  // Inline little dots that show the actual color of a color code
+  // https://www.youtube.com/watch?v=YVyZF8Os6fg
+  "editor.colorDecorators": true,
+
+  // When copying a piece of code to a different application, copy syntax as well.
+  // https://www.youtube.com/watch?v=5d8ubUKpF-A
+  "editor.copyWithSyntaxHighlighting": true,
+
+  // Round the corners of selected textarea
+  // https://www.youtube.com/watch?v=zXWTU-a8A6g
+  "editor.roundedSelection": true,
+
   // Render whitespaces only at the end of line
+  // https://www.youtube.com/watch?v=2pqSIjzfUHc
   "editor.renderWhitespace": "trailing",
+
+  //
+  "editor.experimentalWhitespaceRendering": "svg",
+
+  // Allow for re-arranging characters suggesting options AKA accounting for typos
+  // https://www.youtube.com/watch?v=wJiVd6V_0q4
+  "editor.suggest.filterGraceful": true,
+
+  // Gives "local terms" a boost bonus when proposing suggestions
+  // https://www.youtube.com/watch?v=toA9q7iGjLw
+  "editor.suggest.localityBonus": false,
 
   // Disable Drag and Drop Selection inside Editor
   // https://www.youtube.com/watch?v=dJiZ1Rv2s5I
@@ -119,6 +152,7 @@
 
   // Mouse Wheel Zoom - Enable
   // https://www.youtube.com/watch?v=zdGMsWudiWE
+  // https://www.youtube.com/watch?v=XA7EW46HpNQ
   "editor.mouseWheelZoom": true,
 
   // Mouse Wheel Scroll Sensitivity (Default - 1.0)
@@ -130,9 +164,122 @@
   // https://www.youtube.com/watch?v=keOO910u9UI
   "editor.fastScrollSensitivity": 5,
 
+  // When searching adds the ability to scroll beyond first line of document
+  // https://www.youtube.com/watch?v=6B-P0khHW_c
+  "editor.find.addExtraSpaceOnTop": true,
+
+  // Search inside selection, only when multiple lines are selected
+  // https://www.youtube.com/watch?v=EzGDiZXMgXg
+  "editor.find.autoFindInSelection": "multiline",
+
+  // MacOS Specific
+  // https://www.youtube.com/watch?v=D2DAft6SN0w
+  "editor.find.globalFindClipboard": "true",
+
+  // Disable Peek and make "Go to..." Always just Go to Location
+  // Trigger again (press F12) to cycle through multiple
+  // https://www.youtube.com/watch?v=MuQmMsIpI04
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  // Hide a little dash that shows where your cursor is over to horizontal Scrollbar
+  // https://www.youtube.com/watch?v=J75UdvtsxT0
+  "editor.hideCursorInOverviewRuler": true,
+
+  // Transition from Multiple Cursors to One > Merges them
+  // https://www.youtube.com/watch?v=K84oSByxrSc
+  "editor.multiCursorMergeOverlapping": true,
+
+  // Create multicursors by holding CTRL (or CMD on Mac OS)
+  // https://www.youtube.com/watch?v=yBsSCe9bpo8
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // [EXPERIMENTATION REQUIRED]
+  // Multicursor pasting will "spead" the line if multiline
+  // Each cursor will paste on line of the selection.
+  // https://www.youtube.com/watch?v=YkPhA1yhrtg
+  "editor.multiCursorPaste": "spread",
+
+  // Disables ruler borders on the right
+  // https://www.youtube.com/watch?v=aBs2kWFeEDM
+  "editor.overviewRulerBorder": false,
+
+  // Disable Hints
+  // https://www.youtube.com/watch?v=MHOMlfo3Rbs
+  "editor.parameterHints.enabled": true,
+
+  // Cycle through Hints instaed of closing
+  // https://www.youtube.com/watch?v=pjJIp330teI
+  "editor.parameterHints.cycle": true,
+
+  // Autocomplete suggestions on comments in line
+  // All other suggestions pop window.
+  // https://www.youtube.com/watch?v=64UWbuO5d8c
+  // https://www.youtube.com/watch?v=B89NXOqif-E
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "inline",
+    "strings": "off"
+  },
+
+  // Delay in milliseconds between text input and suggesting autocomplete
+  // https://www.youtube.com/watch?v=s03nfnHWV0s
+  "editor.quickSuggestionsDelay": 2,
+
+  // Display non-white ASCII characters
+  // https://www.youtube.com/watch?v=MJ0Cu0f7syY
+  // https://www.youtube.com/watch?v=d2gnwP0lbto
+  "editor.renderControlCharacters": true,
+
+  // Don't render last file line number if empty
+  // https://www.youtube.com/watch?v=h-S2h_VfrEc
+  "editor.renderFinalNewline": "off",
+
+  // Highlights Active Indentation on Files
+  // https://www.youtube.com/watch?v=J75UdvtsxT0
+  "editor.guides.highlightActiveIndentation": true,
+
+  // Hovering over something will pop definitions
+  // https://www.youtube.com/watch?v=GXqMtrpiEpM
+  "editor.hover.enabled": true,
+
+  // Decided how long should you hover over an item before its definition is shown.
+  // https://www.youtube.com/watch?v=7vCB-8_e0bI
+  "editor.hover.delay": 250,
+
+  // [EXPERIMENTATION REQUIRED]
+  // Makes hovering definitions stick.
+  // Problems with false - Doesn't allow the color picker to work, since it's a hover box.
+  // https://www.youtube.com/watch?v=3PiP-fDFod0
+  "editor.hover.sticky": true,
+
+  // Enable Glyphs in Editor Margins - Breakpoints
+  // https://www.youtube.com/watch?v=ltYk2WhblhE
+  "editor.glyphMargin": true,
+
+  // EXPERIMENTATION REQUIRED!
+  // Search for selected text by default.
+  // https://www.youtube.com/watch?v=G1Eet77T8Po
+  "editor.find.seedSearchStringFromSelection": "selection",
+
+  // Enables the abillity to fold code
+  // https://www.youtube.com/watch?v=V0A4AHFCMJs
+  "editor.folding": true,
+
+  // Automatically detect which code blocks can be folded based on file language.
+  // https://www.youtube.com/watch?v=MfY7votjym4
+  "editor.foldingStrategy": "auto",
+
   // Decides when to autoclose brackets ([],{})
   // https://www.youtube.com/watch?v=VICsBFsJT1s
   "editor.autoClosingBrackets": "beforeWhitespace",
+
+  // Highlight Brackets
+  // https://www.youtube.com/watch?v=4Q8DYt95E40
+  "editor.matchBrackets": "never",
 
   // Decides when to autoclose Quotes ("",'')
   // https://www.youtube.com/watch?v=l5lFt4YFdcg
@@ -150,9 +297,133 @@
   // https://www.youtube.com/watch?v=fpnPLCyqsKQ
   "editor.autoSurround": "languageDefined",
 
+  // When creating a Comment, add a space
+  "editor.comments.insertSpace": true,
+
+  //
+  "editor.comments.ignoreEmptyLines": false,
+
   // When Searching, don't jump to matches unless triggered.
   // https://www.youtube.com/watch?v=gnyWgbogJwk
   "editor.find.cursorMoveOnType": false,
+
+  // Set global font Family
+  // https://www.youtube.com/watch?v=CHB_Wz_rNSM
+  "editor.fontFamily": "Consolas",
+
+  // Adds X pixels between letters.
+  // https://www.youtube.com/watch?v=3YNjx6PO_u4
+  "editor.letterSpacing": 0,
+
+  // Set global font Size
+  // https://www.youtube.com/watch?v=DdJWJm3TNRA
+  "editor.fontSize": 16,
+
+  // Setting how "bold" should the letters of the font be.
+  // https://www.youtube.com/watch?v=IXIbmWQSrjQ
+  "editor.fontWeight": "200",
+
+  // Controls Line Height
+  // https://www.youtube.com/watch?v=5K7tZL85ua4
+  "editor.lineHeight": 21,
+
+  // Enable Formatting on Paste.
+  // https://www.youtube.com/watch?v=Q5tRFFdSvX4
+  "editor.formatOnPaste": true,
+
+  // Format files on "Save"
+  // [ATTENTION REQUIRED] - Find out how you can autoformat files without having to manually save
+  // https://www.youtube.com/watch?v=zJ8EjUqx1hg
+  "editor.formatOnSave": true,
+
+  // Try formatting only modifications (if exist) else default to file
+  //
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+
+  // Enable or Disable Specific Suggestions based on Type
+  // https://youtu.be/hRn5pF8OtAs
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showColors": true,
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showConstructors": true,
+  "editor.suggest.showCustomcolors": true,
+  "editor.suggest.showDeprecated": true,
+  "editor.suggest.showWords": true,
+  "editor.suggest.showFields": true,
+  "editor.suggest.showEnumMembers": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showFiles": true,
+  "editor.suggest.showFolders": true,
+  "editor.suggest.showFunctions": true,
+
+  // Show individual suggestion icons inside Intellisense
+  // https://youtu.be/GvbGFSiJlDs
+  "editor.suggest.showIcons": true,
+
+  "editor.suggest.showInlineDetails": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showIssues": true,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showProperties": true,
+  "editor.suggest.showReferences": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showStatusBar": false,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showTypeParameters": true,
+  "editor.suggest.showUnits": true,
+  "editor.suggest.showUsers": true,
+  "editor.suggest.showValues": true,
+  "editor.suggest.showVariables": true,
+
+  // Don't enable quick suggestions when editing snippets
+  // https://youtu.be/r5j6FqXx2Kw
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // https://youtu.be/GT45_iv_cdY
+  // Changes text size to IntelliSense Suggestions
+  "editor.suggestFontSize": 14,
+
+  // https://youtu.be/SymciVOzpBA
+  // Line Height for IntelliSense Suggestions text inside box
+  "editor.suggestLineHeight": 22,
+
+  // https://youtu.be/E4-dhjbdgWI
+  // Automatically trigger IntelliSense suggestions on trigger character (based on language)
+  "editor.suggestOnTriggerCharacters": true,
+
+  // https://youtu.be/zHIDmhXDXa8
+  // Pre-select most recently used option.
+  "editor.suggestSelection": "recentlyUsed",
+
+  // https://youtu.be/67swnmv5dbo
+  // Accept best matching autosuggestion
+  // [REQUIRES EXPERIMENTATION]
+  "editor.tabCompletion": "off",
+
+  // In case a file is too large, don't execute Auto-format on Save and Syntax Highlighting
+  // Requirements file size > 20mb or 300.000 lines of code.
+  // https://www.youtube.com/watch?v=kOFFOKoe1Nw
+  "editor.largeFileOptimizations": true,
+
+  // If a line is over 20.000 characters don't tokenize
+  // https://www.youtube.com/watch?v=iOPVjo0tgno
+  "editor.maxTokenizationLineLength": 20000,
+
+  // Disable showing the "Lighbulb" icon
+  // https://www.youtube.com/watch?v=bt0Hq2b06DI
+  "editor.lightbulb.enabled": false,
+
+  // Enables or Disables clickable links inside the editor
+  // https://www.youtube.com/watch?v=HDStjpke-Wg
+  "editor.links": true,
+
+  // https://code.visualstudio.com/updates/v1_67#_commentsopenview-default-value
+  // [TESTING]
+  "comments.openView": "firstFileUnresolved",
 
   // Disable Ligatures
   // https://www.youtube.com/watch?v=Hi1IBwpm_Ls
@@ -161,6 +432,7 @@
 
   // Don't disable line numbers.
   // https://www.youtube.com/watch?v=-yk_Bi4wSTQ
+  // https://www.youtube.com/watch?v=ybu9PcvKNZQ
   "editor.lineNumbers": "off",
 
   // Controls if the UI should run in a mode where it is optimized for screen readers.
@@ -169,8 +441,17 @@
   // https://www.youtube.com/watch?v=Z779xMbSszg
   "editor.accessibilitySupport": "off",
 
+  // Keep indentation consistent always unless remove whitespace
+  // https://youtu.be/GLDqa1JDifE
+  "editor.trimAutoWhitespace": false,
+
+  // When adding or removing a tab always remove it as one, don't remove individual spaces
+  // https://youtu.be/xJzTIF8_TLE
+  "editor.useTabStops": true,
+
   // Render vertical lines in the editor at one or more character columns.
   // https://www.youtube.com/watch?v=8HCoN1jBG6Y
+  // https://www.youtube.com/watch?v=yCsBg_3M4qs
   "editor.rulers": [],
 
   // Color based on properties - keywords, comments, variables, numbers, strings, functions etc. etc.
@@ -187,6 +468,29 @@
       "method": "#ff0000"
     }
   },
+
+  // How many characters beyond the end of a line should the editor scroll, create a buffer.
+  // wordWrap On causes this to be disabled
+  // https://www.youtube.com/watch?v=INXoJ-yXpBo
+
+  "editor.scrollBeyondLastColumn": 10,
+
+  // Disable scrolling after last line of file
+  // https://www.youtube.com/watch?v=Ynh1MfGc3ho
+  "editor.scrollBeyondLastLine": false,
+
+  // Enable highlighting anything in file that matches current selection
+  // [REQUIRES ATTENTION - False didn't seem to work]
+  // https://www.youtube.com/watch?v=tTujlm0htTs
+  "editor.selectionHighlight": true,
+
+  // When to show folding control arrows
+  // https://www.youtube.com/watch?v=Soiy8ZUq4j8
+  "editor.showFoldingControls": "always",
+
+  // Fade out unused Import Statements
+  // https://www.youtube.com/watch?v=g7uCNd7TlRI
+  "editor.showUnused": true,
 
   // Hides the Horizontal (Down) Scrollbar from the Editor
   // https://www.youtube.com/watch?v=xt-Jp8a7mXI
@@ -207,10 +511,19 @@
   // https://www.youtube.com/watch?v=4UXlkUo-emY
   "editor.bracketPairColorization.enabled": true,
 
-  // Wrap words after 120 characters
+  // Wrap lines after 120 characters
   // https://www.youtube.com/watch?v=3SNUxn1Cn1o
+  // https://www.youtube.com/watch?v=pon8jLMQOhw
+  // https://www.youtube.com/watch?v=ofOUmZIvDkY
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
+
+  //
+  "editor.accessibilityPageSize": 1,
+
+  // Ident lines when wrapping, at the same level as their parent line.
+  // https://www.youtube.com/watch?v=-tjGNLQBeio
+  "editor.wrappingIndent": "same",
 
   // Sets cursor render animation to "Phase"
   // https://www.youtube.com/watch?v=Hms3gUBKaVQ
@@ -244,6 +557,36 @@
   // All also causes text to be selected as you move to a different view - bug
   "editor.cursorSurroundingLinesStyle": "default",
 
+  // Sets priority for snippet suggestions to "top"
+  // They will show before any other suggestions
+  // https://www.youtube.com/watch?v=HznKCgn3qJs
+  "editor.snippetSuggestions": "top",
+
+  // Suggest autocompletion words based on OPEN documents of same language type
+  // https://www.youtube.com/watch?v=bn_q9ZplQsQ
+  "editor.wordBasedSuggestions": "matchingDocuments",
+
+  // Decides which characters are treated as word separators
+  // Deleted minus for css classes
+  // [EXPERIMENTATION, try removing the dot, see if you like it.]
+  // https://youtu.be/0VEG7cLlvao
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",<>./?",
+
+  // Accept suggestions using commit characters
+  // Commit characters = semicolon for Javascript, Enter_key for text etc.
+  // Alternative only Tab_key
+  // https://www.youtube.com/watch?v=Hmy-zBfpmdk
+  "editor.acceptSuggestionOnCommitCharacter": false,
+
+  // Tab + Enter both accept suggestions
+  // Decided when to accept suggestion and when to enter new line based on context
+  // https://www.youtube.com/watch?v=GMM2zZzNFRs
+  "editor.acceptSuggestionOnEnter": "smart",
+
+  // Close Peek Window by pressing Escape
+  // https://www.youtube.com/watch?v=5-2jCOMGSVY
+  "editor.stablePeek": false,
+
   // Disables Minimap
   // https://www.youtube.com/watch?v=rujmKS0XrzU
   "editor.minimap.enabled": false,
@@ -254,10 +597,87 @@
 
   // Disable rendering characters
   // https://www.youtube.com/watch?v=f1TTFWJKWKc
+  // https://www.youtube.com/watch?v=ImNTtwGXg5g
   "editor.minimap.renderCharacters": false,
+
+  // Determines scale for minimap
+  // https://www.youtube.com/watch?v=azBsatKCKRc
+  // https://www.youtube.com/watch?v=ncF0sAIDbvE
+  "editor.minimap.scale": 1,
+
+  // A box that shows the current code view inside minimap
+  // https://www.youtube.com/watch?v=MveJhNpiM34
+  "editor.minimap.showSlider": "mouseover",
+
+  // Sets Minimap to Show on the Right
+  // https://www.youtube.com/watch?v=5wZp0S0dTK8
+  "editor.minimap.side": "right",
+
+  // Autohide Minimap
+  // https://github.com/microsoft/vscode/issues/28310
+  "editor.minimap.autohide": true,
+
+  // Set Minimap Size
+  // https://www.youtube.com/watch?v=psCnF1C6bxQ
+  "editor.minimap.size": "fit",
+
+  // Enable Indentation Guides
+  // https://www.youtube.com/watch?v=heAT-Kp078U
+  "editor.guides.indentation": true,
+
+  // Highlight current line with a border
+  // https://www.youtube.com/watch?v=w8grkhWN5G4
+  "editor.renderLineHighlight": "none",
+
+  // ** EXPLORER **
+
+  //https://youtu.be/gIL-WR9whtE
+  "explorer.autoReveal": true,
+
+  // Disable Confirmation when Deleting Files and Folders.
+  // https://www.youtube.com/watch?v=2VywHU3iAbU
+  "explorer.confirmDelete": false,
+
+  // Disable Confirmation when Dragging and Dropping Files and Folders.
+  // https://www.youtube.com/watch?v=M8tnPsKcDRo
+  "explorer.confirmDragAndDrop": false,
+
+  // Disable badges inside the File Explorer
+  // https://youtu.be/cgZ4N9WTM2g
+  "explorer.decorations.badges": false,
+
+  // Color code files and folders inside the Explorer View
+  // https://youtu.be/HN3ZbCr49e0
+  "explorer.decorations.colors": true,
+
+  // Enable Dragging and Dropping Files & Folders inside Explorer View
+  // https://youtu.be/KJSyDRYn2sA
+  "explorer.enableDragAndDrop": true,
+
+  // When copying a file, will increment a number copy1, copy2 etc.
+  // https://youtu.be/GUxYAxDOkKM
+  "explorer.incrementalNaming": "smart",
+
+  // Show only current editor in "Open Editors" in Activity Bar [Disabled]
+  // https://www.youtube.com/watch?v=OO1ZzNlO8qg
+  "explorer.openEditors.visible": 1,
+
+  // How to sort files inside the Explorer View
+  // https://youtu.be/kTdvZS6IBv8
+  "explorer.sortOrder": "default",
+
+  //
+  "explorer.openEditors.minVisible": 1,
+
+  //
+  "explorer.autoRevealExclude": {
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
 
   // ** WORKBENCH **
 
+  //
   "workbench.tree.renderIndentGuides": "always",
 
   // Opening a fie from quick open, will open it in Preview mode.
@@ -327,22 +747,6 @@
   // Set the Title of the Window
   "window.title": "${folderName} - ${remoteName}${seperator}${activeEditorShort}",
 
-  // ** FEATURES **
-
-  // ** EXPLORER **
-
-  // Show only current editor in "Open Editors" in Activity Bar [Disabled]
-  // https://www.youtube.com/watch?v=OO1ZzNlO8qg
-  "explorer.openEditors.visible": 1,
-
-  // Disable Confirmation when Draging and Dropping Files and Folders.
-  // https://www.youtube.com/watch?v=M8tnPsKcDRo
-  "explorer.confirmDragAndDrop": false,
-
-  // Disable Confirmation when Deleting Files and Folders.
-  // https://www.youtube.com/watch?v=2VywHU3iAbU
-  "explorer.confirmDelete": false,
-
   // ** BREADCRUMS **
 
   // Disable Breadcrums Entirely
@@ -398,9 +802,32 @@
   // Disable Notebook Breadcrumbs
   "notebook.breadcrumbs.showCodeCells": false,
 
+  // ** CSS **
+
+  // Autocomplete Semicolon in CSS
+  // https://www.youtube.com/watch?v=kWZ-U2_ydFc
+  "css.completion.completePropertyWithSemicolon": true,
+
+  // Trigger prompt for css values
+  // https://www.youtube.com/watch?v=fW_ylGQNoow
+  "css.completion.triggerPropertyValueCompletion": true,
+
+  // Create a custom property for css.
+  // https://www.youtube.com/watch?v=8lgzkRtjIXk
+  "css.customData": [],
+
+  // Color function for CSS
+  // https://www.youtube.com/watch?v=LJVvHFZTcFQ
+  "css.lint.argumentsInColorFunction": "error",
+
+  // CSS Box Model
+  // https://www.youtube.com/watch?v=rVInkQxLGhs
+  "css.lint.boxModel": "warning",
+
   // ** OUTLINE **
 
-  // Visibillity Parameters
+  // Visibility Parameters
+  // https://youtu.be/P5SF22bTR-g
   "outline.showArrays": false,
   "outline.showBooleans": false,
   "outline.showConstants": false,
@@ -427,9 +854,20 @@
   "outline.showModules": false,
 
   // Disable Errors and Warnings from Outline
+  // [EXPERIMENTATION REQUIRED]
+  // https://youtu.be/P5SF22bTR-g
   "outline.problems.enabled": false,
+
+  // Disable Colors in Problems inside Outline
+  // https://youtu.be/d4m4gALs7GQ
   "outline.problems.colors": false,
+
+  // Disable problem badges inside Outline
+  // https://youtu.be/TCrT6DHg2io
   "outline.problems.badges": false,
+
+  // Show icons inside outline
+  "outline.icons": true,
 
   // ** FORMATTING **
 
@@ -438,6 +876,26 @@
   "yapf.importStrategy": "fromEnvironment",
 
   // ** EXTENSIONS **
+
+  // When opening a new file, don't pop-up recommended extensions
+  // https://www.youtube.com/watch?v=HmYhlBmCvzU
+  "extensions.ignoreRecommendations": true,
+
+  // Disable Automatically check for new updates
+  // https://www.youtube.com/watch?v=r8XWk379Wsc
+  "extensions.autoCheckUpdates": false,
+
+  // Disable Auto update extensions
+  // https://www.youtube.com/watch?v=Zs6eaSK8tFs
+  "extensions.autoUpdate": false,
+
+  // When navigating away, to files, not other editors, close Extension details view automatically
+  // https://www.youtube.com/watch?v=h9AWCCjlhLQ
+  "extensions.closeExtensionDetailsOnViewChange": true,
+
+  // Allows extensions to open URLs without prompt
+  // https://www.youtube.com/watch?v=JWa5sdWls4U
+  "extensions.confirmedUriHandlerExtensionIds": [],
 
   // Discord Extension
   "vscord.app.name": "VSCodium",
@@ -489,6 +947,57 @@
   "vscord.status.state.text.idle": "1",
   "vscord.status.state.text.notInFile": "under {workspace}",
   "vscord.status.buttons.button1.enabled": false,
-  "vscord.status.buttons.button2.active.enabled": true
+  "vscord.status.buttons.button2.active.enabled": true,
+  "settingsSync.ignoredSettings": [],
+  "terminal.integrated.fontFamily": "monospace",
   // ----------------------------------------------------------------------------
+  //
+
+  //  ** CODE SPELL CHECKER **
+  // https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+  "cSpell.minWordLength": 3,
+  "cSpell.numSuggestions": 4,
+  "cSpell.language": "en,el",
+  "cSpell.enabled": true,
+  "cSpell.showStatus": true,
+  "cSpell.allowCompoundWords": false,
+  "cSpell.flagWords": ["hte"],
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!elixir",
+    "!erlang",
+    "!go",
+    "!graphql",
+    "!handlebars",
+    "!haskell",
+    "!jade",
+    "!java",
+    "!javascriptreact",
+    "!jupyter",
+    "!latex",
+    "!php",
+    "!pug",
+    "!rust",
+    "!scala",
+    "!scminput",
+    "!typescript",
+    "!typescriptreact",
+    "!vue"
+  ],
+  // --------------------------------------------
+
+  // ** Dictionary Completion **
+  // https://marketplace.visualstudio.com/items?itemName=yzhang.dictionary-completion
+  "dictCompletion.leastNumOfChars": 3,
+  "dictCompletion.addSpaceAfterCompletion": true,
+  "dictCompletion.collectWordsFromCurrentFile": false,
+  "dictCompletion.useExternalUserDictFile": true,
+  "cSpell.userWords": ["whitespaces"],
+  "hungryDelete.followAboveLineIndent": true,
+  "continue-comment.viewModeAsCursor": true,
+  "continue-comment.alwaysOn": false,
+  "continue-comment.secondaryCursorStyle": "UnderLine"
 }
