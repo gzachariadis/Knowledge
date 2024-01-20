@@ -215,37 +215,48 @@
 
     // ** BREADCRUMBS **
 
-    "breadcrumbs.enabled": true,
-    "breadcrumbs.filePath": "on",
-    "breadcrumbs.icons": true,
-    "breadcrumbs.showArrays": true,
-    "breadcrumbs.showBooleans": true,
-    "breadcrumbs.showClasses": true,
-    "breadcrumbs.showConstants": true,
-    "breadcrumbs.showConstructors": true,
-    "breadcrumbs.showEnumMembers": true,
-    "breadcrumbs.showEnums": true,
-    "breadcrumbs.showEvents": true,
-    "breadcrumbs.showFields": true,
-    "breadcrumbs.showFiles": true,
-    "breadcrumbs.showFunctions": true,
-    "breadcrumbs.showInterfaces": true,
-    "breadcrumbs.showKeys": true,
-    "breadcrumbs.showMethods": true,
-    "breadcrumbs.showModules": true,
-    "breadcrumbs.showNamespaces": true,
-    "breadcrumbs.showNull": true,
-    "breadcrumbs.showNumbers": true,
-    "breadcrumbs.showObjects": true,
-    "breadcrumbs.showOperators": true,
-    "breadcrumbs.showPackages": true,
-    "breadcrumbs.showProperties": true,
-    "breadcrumbs.showStrings": true,
-    "breadcrumbs.showStructs": true,
-    "breadcrumbs.showTypeParameters": true,
-    "breadcrumbs.showVariables": true,
-    "breadcrumbs.symbolPath": "on",
-    "breadcrumbs.symbolSortOrder": "position",
+		// Disable Breadcrumbs Entirely
+    "breadcrumbs.enabled": false, // https://youtu.be/fHhSw3xDIE4 - https://youtu.be/lajq51wRjGA
+    
+		// Sets whether file paths are to be shown in breadcrumbs
+		"breadcrumbs.filePath": "off", // https://youtu.be/-mM-SZsLCK8
+
+		// Disable Breadcrumb icons
+		"breadcrumbs.icons": false, // https://youtu.be/IlLxU3_Py1Q
+		
+		// Breadcrumbs Individual Viability Parameters - https://youtu.be/C3czWbFvwXo
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showClasses": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showConstructors": false,
+    "breadcrumbs.showEnumMembers": false,
+    "breadcrumbs.showEnums": false,
+    "breadcrumbs.showEvents": false,
+    "breadcrumbs.showFields": false,
+    "breadcrumbs.showFiles": false,
+    "breadcrumbs.showFunctions": false,
+    "breadcrumbs.showInterfaces": false,
+    "breadcrumbs.showKeys": false,
+    "breadcrumbs.showMethods": false,
+    "breadcrumbs.showModules": false,
+    "breadcrumbs.showNamespaces": false,
+    "breadcrumbs.showNull": false,
+    "breadcrumbs.showNumbers": false,
+    "breadcrumbs.showObjects": false,
+    "breadcrumbs.showOperators": false,
+    "breadcrumbs.showPackages": false,
+    "breadcrumbs.showProperties": false,
+    "breadcrumbs.showStrings": false,
+    "breadcrumbs.showStructs": false,
+    "breadcrumbs.showTypeParameters": false,
+    "breadcrumbs.showVariables": false,
+		
+		// Disable Symbols in Breadcrumbs
+    "breadcrumbs.symbolPath": "off", // https://youtu.be/i8xwubpXGs0
+		
+		// Sort Symbols by Name [Disabled]
+    "breadcrumbs.symbolSortOrder": "name", // https://youtu.be/vFky6OmH2fA
 
     // ** CHAT **
 
@@ -260,19 +271,27 @@
     "comments.collapseOnResolve": true,
     "comments.maxHeight": true,
     "comments.openPanel": "openOnSessionStartWithComments",
-    "comments.openView": "firstFile",
-    "comments.useRelativeTime": true,
+
+		// [TESTING]
+    "comments.openView": "firstFileUnresolved", // https://code.visualstudio.com/updates/v1_67#_commentsopenview-default-value
+    
+		"comments.useRelativeTime": true,
     "comments.visible": true,
-    "continue-comment.alwaysOn": false,
-    "continue-comment.secondaryCursorStyle": "UnderLine",
+		
+		// ** Continue-Comment
+    "continue-comment.alwaysOn": true,
+    "continue-comment.secondaryCursorStyle": "UnderLineThin",
     "continue-comment.viewModeAsCursor": true,
 
     // ** Code Spell Checker **
 
     "cSpell.advanced.feature.useReferenceProviderRemove": "",
     "cSpell.advanced.feature.useReferenceProviderWithRename": false,
-    "cSpell.allowCompoundWords": false,
-    "cSpell.allowedSchemas": [
+		
+		// 
+    "cSpell.allowCompoundWords": false, //
+    
+		"cSpell.allowedSchemas": [
         "file",
         "gist",
         "repo",
@@ -296,8 +315,11 @@
     "cSpell.diagnosticLevel": "Information",
     "cSpell.dictionaries": [],
     "cSpell.dictionaryDefinitions": [],
-    "cSpell.enabled": true,
-    "cSpell.enabledLanguageIds": [
+		
+		// 
+    "cSpell.enabled": true, //
+    
+		"cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
         "cpp",
@@ -343,7 +365,7 @@
     "cSpell.experimental.enableSettingsViewerV2": false,
     "cSpell.files": [],
     "cSpell.fixSpellingWithRenameProvider": true,
-    "cSpell.flagWords": [],
+    "cSpell.flagWords": ["hte","fie"],
     "cSpell.globRoot": "",
     "cSpell.hideAddToDictionaryCodeActions": false,
     "cSpell.ignorePaths": [
@@ -358,21 +380,33 @@
     "cSpell.ignoreWords": [],
     "cSpell.import": [],
     "cSpell.includeRegExpList": [],
-    "cSpell.language": "en",
-    "cSpell.languageSettings": [],
+		
+		// 
+    "cSpell.language": "en,el", //
+    
+		"cSpell.languageSettings": [],
     "cSpell.logFile": "",
     "cSpell.logLevel": "Error",
     "cSpell.maxDuplicateProblems": 5,
     "cSpell.maxNumberOfProblems": 100,
-    "cSpell.minWordLength": 4,
-    "cSpell.noConfigSearch": false,
+		
+		// 
+    "cSpell.minWordLength": 3, //
+    
+		"cSpell.noConfigSearch": false,
     "cSpell.noSuggestDictionaries": [],
-    "cSpell.numSuggestions": 8,
-    "cSpell.overrides": [],
+		
+		// 
+    "cSpell.numSuggestions": 4, //
+    
+		"cSpell.overrides": [],
     "cSpell.patterns": [],
     "cSpell.showAutocompleteSuggestions": false,
     "cSpell.showCommandsInEditorContextMenu": true,
-    "cSpell.showStatus": true,
+    
+		// Disable Status from showing on Status bar
+		"cSpell.showStatus": false,
+		
     "cSpell.showStatusAlignment": "Right",
     "cSpell.showSuggestionsLinkInEditorContextMenu": true,
     "cSpell.spellCheckDelayMs": 50,
@@ -384,21 +418,27 @@
     "cSpell.useGitignore": true,
     "cSpell.usePnP": false,
     "cSpell.userWords": [
-        "autoindentation",
-        "dockercompose",
-        "YAPF"
-    ],
+			"Autohide",
+			"autoindentation",
+			"dockercompose",
+			"seperator",
+			"YAPF"
+		],
     "cSpell.validateDirectives": false,
     "cSpell.workspaceRootPath": "",
 
     // ** CSS ** 
 
-    "css.completion.completePropertyWithSemicolon": true,
-    "css.completion.triggerPropertyValueCompletion": true,
+		// Autocomplete with Semicolon in CSS
+    "css.completion.completePropertyWithSemicolon": true, // https://youtu.be/kWZ-U2_ydFc
     
-    "css.customData": [],
+		// Trigger prompt for css values
+		"css.completion.triggerPropertyValueCompletion": true, // https://youtu.be/fW_ylGQNoow
     
-    "css.format.braceStyle": "collapse",
+		// Create a custom property for css.
+    "css.customData": [], // https://youtu.be/8lgzkRtjIXk
+    
+    "css.format.braceStyle": "collapse", 
     "css.format.enable": true,
     "css.format.maxPreserveNewLines": null,
     "css.format.newlineBetweenRules": true,
@@ -411,9 +451,13 @@
     
     // ** CSS LINT
 
-    "css.lint.argumentsInColorFunction": "error",
-    "css.lint.boxModel": "ignore",
-    "css.lint.compatibleVendorPrefixes": "ignore",
+		// Color function for CSS
+    "css.lint.argumentsInColorFunction": "error", // https://youtu.be/LJVvHFZTcFQ
+		
+		// CSS Box Model
+    "css.lint.boxModel": "warning", // https://youtu.be/rVInkQxLGhs
+    
+		"css.lint.compatibleVendorPrefixes": "ignore",
     "css.lint.duplicateProperties": "ignore",
     "css.lint.emptyRules": "warning",
     "css.lint.float": "ignore",
@@ -484,15 +528,15 @@
     "debug.terminal.clearBeforeReusing": false,
     "debug.toolBarLocation": "floating",
 
-    // Dictionary Completion
+    // ** Dictionary Completion **
 
-    "dictCompletion.addSpaceAfterCompletion": false,
+    "dictCompletion.addSpaceAfterCompletion": true,
     "dictCompletion.collectWordsFromCurrentFile": false,
-    "dictCompletion.externalUserDictFiles": [],
-    "dictCompletion.leastNumOfChars": 0,
+    "dictCompletion.externalUserDictFiles":[],
+    "dictCompletion.leastNumOfChars": 3,
     "dictCompletion.programmingLanguage": true,
     "dictCompletion.useExternalUserDictFile": true,
-    "dictCompletion.userDictionary": [],
+    "dictCompletion.userDictionary": ["whitespaces"],
 
     // ** DIFF EDITOR **
 
@@ -516,15 +560,26 @@
 
     // ** EDITOR **
 
-    "editor.acceptSuggestionOnCommitCharacter": true,
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.accessibilityPageSize": 10,
-    "editor.accessibilitySupport": "auto",
+		// Accept suggestions using commit characters
+  	// Commit characters = semicolon for Javascript, Enter_key for text etc.
+  	// Alternative only Tab_key
+    "editor.acceptSuggestionOnCommitCharacter": false, // https://youtu.be/Hmy-zBfpmdk
+    
+		// Tab + Enter both accept suggestions
+		// Decided when to accept suggestion and when to enter new line based on context
+		"editor.acceptSuggestionOnEnter": "smart", // https://youtu.be/GMM2zZzNFRs
+		
+		// 
+    "editor.accessibilityPageSize": 1, // 
+
+		// Supportive feature for speech synthesizers or braille displays.
+    "editor.accessibilitySupport": "off", // https://youtu.be/Z779xMbSszg
     
 		// Decides when to autoclose brackets
 		"editor.autoClosingBrackets": "beforeWhitespace", // https://youtu.be/VICsBFsJT1s
 
     "editor.autoClosingComments": "languageDefined",
+		
     "editor.autoClosingDelete": "auto",
 
 		// Type over a closing parenthesis only if automatically generated
@@ -536,13 +591,12 @@
 		// Controls whether to auto adjust indentation when typing/pasting/moving lines.
 		"editor.autoIndent": "full", // https://youtu.be/I1W7ExCYBz4
 
-
 		// Automatically surround selections
 		// [ASK FOR ALWAYS]
     "editor.autoSurround": "languageDefined", // https://youtu.be/fpnPLCyqsKQ
 
-    
-		"editor.bracketPairColorization.enabled": true,
+    // Enable bracket colorization
+		"editor.bracketPairColorization.enabled": true, // https://youtu.be/4UXlkUo-emY
     
 		
 		"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
@@ -557,6 +611,8 @@
 		},
 
     "editor.codeActionWidget.includeNearbyQuickFixes": true,
+		
+		
     "editor.codeActionWidget.showHeaders": true,
 
 		// ** CODE LENS ** 
@@ -565,6 +621,7 @@
     "editor.codeLens": false, // https://youtu.be/JNT9P5u5nIA
 		
 		"editor.codeLensFontFamily": "",
+		
     "editor.codeLensFontSize": 0,
 		
 		// ** COLOR DECORATORS ** 
@@ -573,6 +630,7 @@
 		"editor.colorDecorators": true, // https://youtu.be/YVyZF8Os6fg
 
     "editor.colorDecoratorsActivatedOn": "clickAndHover",
+		
     "editor.colorDecoratorsLimit": 500,
 
     "editor.columnSelection": false,
@@ -588,17 +646,35 @@
 		// Copying a piece of code to a different application, includes syntax.
 		"editor.copyWithSyntaxHighlighting": true, // https://youtu.be/5d8ubUKpF-A
 
-    "editor.cursorBlinking": "blink",
-    "editor.cursorSmoothCaretAnimation": "off",
-    "editor.cursorStyle": "line",
-    "editor.cursorSurroundingLines": 0,
-    "editor.cursorSurroundingLinesStyle": "default",
-    "editor.cursorWidth": 0,
+		// Sets cursor render animation to Smooth
+    "editor.cursorBlinking": "smooth", // https://youtu.be/q1wAnW_yFDU - https://youtu.be/Hms3gUBKaVQ
+		
+		// Enable Smoother Cursor Animation
+    "editor.cursorSmoothCaretAnimation": "on", // https://youtu.be/c-6AzCZ6mjw - https://youtu.be/FCUi_dRU0tY
     
+		// Set Cursor Style - underline instead of line
+		"editor.cursorStyle": "underline-thin", // https://youtu.be/Nki8tVQ82_8
+		
+		// Move the window Up or Down when the cursor is exactly X lines from the top/bottom
+		"editor.cursorSurroundingLines": 25, // https://youtu.be/PQAuhE6bBEc
+
+		// Decided when "cursor surrounding lines" policy should be enforced
+  	// Default = don't move view with cursor , but move with keyboard
+  	// All = move with both - All causes view to move when you click (not wanted)
+  	// All also causes text to be selected as you move to a different view - bug
+		"editor.cursorSurroundingLinesStyle": "default", // 
+		
+		// Works only when "cursorStyle" is set to "line"
+    "editor.cursorWidth": 2, // https://youtu.be/-S-clq9jvyk
+    
+		
 		"editor.defaultColorDecorators": false,
-    "editor.defaultFoldingRangeProvider": null,
-    "editor.defaultFormatter": null,
-    "editor.definitionLinkOpensInPeek": false,
+    
+		"editor.defaultFoldingRangeProvider": null,
+    
+		"editor.defaultFormatter": null,
+    
+		"editor.definitionLinkOpensInPeek": false,
     
 		// 
 		"editor.detectIndentation": false,  // https://www.youtube.com/watch?v=vGsXNImZz4A
@@ -661,7 +737,8 @@
 		// Set global Font Family
 		"editor.fontFamily": "Consolas, 'Courier New', monospace", // https://youtu.be/CHB_Wz_rNSM
 		
-		"editor.fontLigatures": false,
+		// Disable Ligatures
+		"editor.fontLigatures": false, // https://youtu.be/dJvX-Pb92BQ - https://youtu.be/Hi1IBwpm_Ls
     
 		// Set global Font Size
 		"editor.fontSize": 14, // https://youtu.be/DdJWJm3TNRA
@@ -718,16 +795,17 @@
 		
 		"editor.guides.bracketPairs": false,
     
-		
-		"editor.guides.bracketPairsHorizontal": "active",
+		// Disables horizontal bracket pair guides.
+		"editor.guides.bracketPairsHorizontal": false, // https://youtu.be/4UXlkUo-emY
     
-		
-		"editor.guides.highlightActiveBracketPair": true,
+		// Disable highlighting of active bracket pair
+		"editor.guides.highlightActiveBracketPair": false,
     
 		// Highlights the "Active" Indentation on Files
 		"editor.guides.highlightActiveIndentation": true, // https://youtu.be/J75UdvtsxT0
 		
-		"editor.guides.indentation": true,
+		// Enable Indentation Guides
+		"editor.guides.indentation": true, // https://youtu.be/heAT-Kp078U
     
 		// Hide a little dash that shows where your cursor is over to horizontal Scrollbar
 		"editor.hideCursorInOverviewRuler": true, // https://youtu.be/J75UdvtsxT0
@@ -790,60 +868,58 @@
 		// Adds X pixels between letters.
 		"editor.letterSpacing": 0, // https://youtu.be/3YNjx6PO_u4
 
-		
-    "editor.lightbulb.enabled": true,
+		// Disable Lightbulb icon
+    "editor.lightbulb.enabled": true, // https://youtu.be/bt0Hq2b06DI
 
 
     "editor.lightbulb.experimental.showAiIcon": "off",
     
 		// Controls Line Height
 		"editor.lineHeight": 21, // https://youtu.be/5K7tZL85ua4
-    
 		
-		"editor.lineNumbers": "on",
-    
+		// Disable line Numbers inside Editor
+		"editor.lineNumbers": "off", // https://youtu.be/ybu9PcvKNZQ - https://youtu.be/-yk_Bi4wSTQ
 		
 		"editor.linkedEditing": false,
     
-		
-		"editor.links": true,
+		// Enable clickable links inside the editor
+		"editor.links": true, // https://youtu.be/HDStjpke-Wg
     
 		// Highlight Brackets
 		"editor.matchBrackets": "never", // https://youtu.be/4Q8DYt95E40
     
+		// Single Line > 20.000 characters, then don't tokenize
+		"editor.maxTokenizationLineLength": 20000, // https://youtu.be/iOPVjo0tgno 
 		
-		"editor.maxTokenizationLineLength": 20000,
+		// Autohide Minimap
+		"editor.minimap.autohide": true, // https://github.com/microsoft/vscode/issues/28310
     
+		// Disables Minimap
+		"editor.minimap.enabled": false, // https://youtu.be/rujmKS0XrzU
+    
+		// Limits the Minimap Width
+		"editor.minimap.maxColumn": 0, // https://youtu.be/S6WT8bFsnKE
+    
+		// Disable rendering characters
+		"editor.minimap.renderCharacters": false, // https://youtu.be/ImNTtwGXg5g - https://youtu.be/f1TTFWJKWKc
+    
+		// Determines scale for minimap
+		"editor.minimap.scale": 1, // https://youtu.be/azBsatKCKRc - https://youtu.be/ncF0sAIDbvE
+    
+		// A box that shows the current code view inside Minimap
+		"editor.minimap.showSlider": "mouseover", // https://youtu.be/MveJhNpiM34
+    
+		// Sets Minimap to Show on the Left
+		"editor.minimap.side": "left", // https://youtu.be/5wZp0S0dTK8
 		
-		"editor.minimap.autohide": false,
-    
-		
-		"editor.minimap.enabled": true,
-    
-		
-		"editor.minimap.maxColumn": 120,
-    
-		
-		"editor.minimap.renderCharacters": true,
-    
-		
-		"editor.minimap.scale": 1,
-    
-		
-		"editor.minimap.showSlider": "mouseover",
-    
-		
-		"editor.minimap.side": "right",
-    
-		
-		"editor.minimap.size": "proportional",
-    
+		// Set Minimap Size
+		"editor.minimap.size": "fit", // https://youtu.be/psCnF1C6bxQ
+		   
 		// Decrease Mouse Wheel Scroll Sensitivity (Default - 1.0)
 		"editor.mouseWheelScrollSensitivity": 0.4,  // https://youtu.be/7Kz2zlK8Iok
     
 		// Enable Mouse Wheel Zoom
 		"editor.mouseWheelZoom": true, // https://youtu.be/XA7EW46HpNQ - https://youtu.be/zdGMsWudiWE
-    
 		
 		"editor.multiCursorLimit": 10000,
     
@@ -892,11 +968,9 @@
         "other": "on",
         "strings": "off"
     },
-    
 
 		// Delay in milliseconds between text input and suggestion autocomplete 
 		"editor.quickSuggestionsDelay": 2, // https://youtu.be/s03nfnHWV0s
-    
 		
 		"editor.rename.enablePreview": true,
 		
@@ -907,9 +981,9 @@
 
 		// Don't render last file line number if empty
     "editor.renderFinalNewline": "off", // https://youtu.be/h-S2h_VfrEc
-
-
-    "editor.renderLineHighlight": "line",
+		
+		// Disable Highlighting current line with a border
+    "editor.renderLineHighlight": "none", // https://youtu.be/w8grkhWN5G4
 		
     "editor.renderLineHighlightOnlyWhenFocus": false,
 
@@ -919,31 +993,63 @@
     // When selecting a text-area, round the corners of selection 
 		"editor.roundedSelection": true, // https://youtu.be/zXWTU-a8A6g
     
-		"editor.rulers": [],
-
-
+		// Render vertical lines in the editor at one or more character columns.
+		"editor.rulers": [], // https://youtu.be/yCsBg_3M4qs - https://youtu.be/8HCoN1jBG6Y
+		
+		//
     "editor.screenReaderAnnounceInlineSuggestion": true,
-    "editor.scrollbar.horizontal": "auto",
+    
+		//
+		"editor.scrollbar.horizontal": "hidden", // https://youtu.be/xt-Jp8a7mXI
+		
+		// Hides the Horizontal (Down) Scrollbar from the Editor
     "editor.scrollbar.horizontalScrollbarSize": 12,
-    "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
+    
+		"editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
     "editor.scrollbar.scrollByPage": false,
-    "editor.scrollbar.vertical": "auto",
-    "editor.scrollbar.verticalScrollbarSize": 14,
-    "editor.scrollBeyondLastColumn": 4,
-    "editor.scrollBeyondLastLine": true,
+		
+    // Hides the Vertical (Side) Scrollbar from the Editor
+		"editor.scrollbar.vertical": "hidden", // https://youtu.be/xt-Jp8a7mXI
+    
+		"editor.scrollbar.verticalScrollbarSize": 14,
+		
+		// How many characters beyond the end of a line should the editor scroll. Creates a buffer.
+		// Wordwrap = on , this is disabled.
+    "editor.scrollBeyondLastColumn": 10, // https://youtu.be/INXoJ-yXpBo
+    
+		// Disable scrolling after last line of file
+		"editor.scrollBeyondLastLine": false, // https://youtu.be/Ynh1MfGc3ho
+		
     "editor.scrollPredominantAxis": true,
-    "editor.selectionHighlight": true,
-    "editor.semanticHighlighting.enabled": "configuredByTheme",
-    "editor.semanticTokenColorCustomizations": {},
+		
+		// Enable highlighting anything in file that matches current selection
+		// [REQUIRES ATTENTION - False didn't seem to work]
+    "editor.selectionHighlight": true, // https://youtu.be/tTujlm0htTs
+    
+		"editor.semanticHighlighting.enabled": "configuredByTheme",
+		
+		// Color-based Semantics - keywords, methods, variables, numbers etc. etc. - Overwrites Themes
+    "editor.semanticTokenColorCustomizations": {}, // https://youtu.be/vthJRp8jPkw
+		
     "editor.showDeprecated": true,
-    "editor.showFoldingControls": "mouseover",
-    "editor.showUnused": true,
+
+		// Always show Folding Controls
+		"editor.showFoldingControls": "always", // https://youtu.be/Soiy8ZUq4j8
+
+		// Fade-out Unused Imports
+		"editor.showUnused": true, //  https://www.youtube.com/watch?v=g7uCNd7TlRI
+		
     "editor.smartSelect.selectLeadingAndTrailingWhitespace": true,
     "editor.smartSelect.selectSubwords": true,
     "editor.smoothScrolling": false,
     "editor.snippets.codeActions.enabled": true,
-    "editor.snippetSuggestions": "inline",
-    "editor.stablePeek": false,
+		
+		// Sets priority for snippet suggestions to "top", show them before any other suggestions
+    "editor.snippetSuggestions": "top", // https://youtu.be/HznKCgn3qJs
+    
+		// Close Peek Window by pressing Escape
+		"editor.stablePeek": false, // https://youtu.be/5-2jCOMGSVY
+		
     "editor.stickyScroll.defaultModel": "outlineModel",
     "editor.stickyScroll.enabled": false,
     "editor.stickyScroll.maxLineCount": 5,
@@ -1030,9 +1136,17 @@
     // Defines how many Spaces characters a Tab character is, globally.
 		"editor.tabSize": 2, // https://youtu.be/oEAr7bSQkpo
     
-		"editor.tokenColorCustomizations": {},
-    "editor.trimAutoWhitespace": true,
-    "editor.unfoldOnClickAfterEndOfLine": false,
+		// Color-based Properties - keywords, comments, variables, numbers, strings, functions etc. - Overwrites themes
+		"editor.tokenColorCustomizations": {}, // https://youtu.be/0iW-mp7qwwA - https://youtu.be/7DlZHZF7P3U
+		
+		
+		
+
+		// Keep indentation consistent always, remove whitespace
+    "editor.trimAutoWhitespace": false,// https://youtu.be/GLDqa1JDifE
+    
+		
+		"editor.unfoldOnClickAfterEndOfLine": false,
     "editor.unicodeHighlight.allowedCharacters": {},
     "editor.unicodeHighlight.allowedLocales": {
         "_os": true,
@@ -1044,13 +1158,29 @@
     "editor.unicodeHighlight.invisibleCharacters": true,
     "editor.unicodeHighlight.nonBasicASCII": "inUntrustedWorkspace",
     "editor.unusualLineTerminators": "prompt",
-    "editor.useTabStops": true,
-    "editor.wordBasedSuggestions": "matchingDocuments",
+		
+		// When adding or removing a tab always remove it as one, don't remove individual spaces
+    "editor.useTabStops": true, // https://youtu.be/xJzTIF8_TLE
+    
+		// Suggest autocompletion words based on OPEN documents of same language type
+		"editor.wordBasedSuggestions": "matchingDocuments", // https://youtu.be/bn_q9ZplQsQ
+		
     "editor.wordBreak": "normal",
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.wordWrap": "off",
-    "editor.wordWrapColumn": 80,
-    "editor.wrappingIndent": "same",
+		
+		// Decides which characters are treated as word separators
+ 	  // Deleted minus for css classes
+  	// [EXPERIMENTATION, try removing the dot, see if you like it.]
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?", // https://youtu.be/0VEG7cLlvao
+    
+		// Wrap Editor lines based on wordWrapColumn
+		"editor.wordWrap":"wordWrapColumn", // https://youtu.be/pon8jLMQOhw - https://youtu.be/3SNUxn1Cn1o
+    
+		// Wrap Editor lines after 120 characters
+		"editor.wordWrapColumn": 120, // https://youtu.be/ofOUmZIvDkY
+    
+		// Ident lines when wrapping, at the same level as their parent line.
+		"editor.wrappingIndent": "same", // https://youtu.be/-tjGNLQBeio
+		
     "editor.wrappingStrategy": "simple",
 
     // ** EMMET **
@@ -1078,25 +1208,39 @@
     
     "emmet.variables": {},
 
-
     // ** EXPLORER **
    
-    "explorer.autoReveal": true,
+		// 
+    "explorer.autoReveal": true, // https://youtu.be/gIL-WR9whtE
    
+		
     "explorer.autoRevealExclude": {
         "**/bower_components": true,
         "**/node_modules": true
     },
    
     "explorer.compactFolders": true,
-    "explorer.confirmDelete": true,
-    "explorer.confirmDragAndDrop": true,
+		
+    // Disable Confirmation Dialog when Deleting Files and Folders.
+		"explorer.confirmDelete": false, // https://youtu.be/2VywHU3iAbU
+    
+		// Disable Confirmation Dialog when Dragging and Dropping Files and Folders.
+		"explorer.confirmDragAndDrop": false, // https://youtu.be/M8tnPsKcDRo
+		
     "explorer.confirmPasteNative": true,
     "explorer.confirmUndo": "default",
     "explorer.copyRelativePathSeparator": "auto",
-    "explorer.decorations.badges": true,
-    "explorer.decorations.colors": true,
-    "explorer.enableDragAndDrop": true,
+		
+		// Disable badges inside the File Explorer
+    "explorer.decorations.badges": true, // https://youtu.be/cgZ4N9WTM2g
+    
+		// Color code files and folders inside the Explorer View
+		"explorer.decorations.colors": true, // https://youtu.be/HN3ZbCr49e0
+		
+		// Enable Dragging and Dropping Files & Folders inside Explorer View
+    "explorer.enableDragAndDrop": true, // https://youtu.be/KJSyDRYn2sA
+		
+		
     "explorer.enableUndo": true,
     "explorer.excludeGitIgnore": false,
     "explorer.expandSingleFolderWorkspaces": true,
@@ -1112,23 +1256,44 @@
         "tsconfig.json": "tsconfig.*.json"
     },
    
-    "explorer.incrementalNaming": "simple",
-    "explorer.openEditors.minVisible": 0,
-    "explorer.openEditors.sortOrder": "editorOrder",
-    "explorer.openEditors.visible": 9,
-    "explorer.sortOrder": "default",
+    // When copying a file, will increment a number copy1, copy2 etc.
+		"explorer.incrementalNaming": "smart", // https://youtu.be/GUxYAxDOkKM
+		
+		//
+    "explorer.openEditors.minVisible": 1,
+		
+		//
+    "explorer.openEditors.sortOrder": "alphabetical", //
+		
+		// Show only current editor in "Open Editors" in Activity Bar [Disabled]
+    "explorer.openEditors.visible": 1, // https://youtu.be/OO1ZzNlO8qg
+    
+		// How to sort files inside the Explorer View
+		"explorer.sortOrder": "default", // https://youtu.be/kTdvZS6IBv8
+		
     "explorer.sortOrderLexicographicOptions": "default",
     
     
     // ** EXTENSIONS ** 
 
-    "extensions.autoCheckUpdates": true,
-    "extensions.autoUpdate": true,
-    "extensions.closeExtensionDetailsOnViewChange": false,
-    "extensions.confirmedUriHandlerExtensionIds": [],
-    "extensions.experimental.affinity": {},
-    "extensions.experimental.deferredStartupFinishedActivation": false,
-    "extensions.ignoreRecommendations": false,
+		// Disable Automatically check for new updates
+    "extensions.autoCheckUpdates": false, // https://youtu.be/r8XWk379Wsc
+    
+		// Disable Auto-updating
+		"extensions.autoUpdate": false, // https://youtu.be/r8XWk379Wsc
+    
+		// When navigating away, to files, not other editors, close Extension details view automatically
+		"extensions.closeExtensionDetailsOnViewChange": true, // https://youtu.be/h9AWCCjlhLQ
+		
+		// Allows extensions to open URLs without prompt
+    "extensions.confirmedUriHandlerExtensionIds": [], // https://youtu.be/JWa5sdWls4U
+   
+		"extensions.experimental.affinity": {},
+    
+		"extensions.experimental.deferredStartupFinishedActivation": false,
+		
+		// When opening a new file, don't pop-up recommended extensions.
+    "extensions.ignoreRecommendations": true, // https://youtu.be/HmYhlBmCvzU
     
     "extensions.supportUntrustedWorkspaces": {},
     
@@ -1401,7 +1566,7 @@
 
     "hungryDelete.considerIncreaseIndentPattern": false,
     "hungryDelete.enableSmartBackspace": true,
-    "hungryDelete.followAboveLineIndent": false,
+    "hungryDelete.followAboveLineIndent": true,
     "hungryDelete.keepOneSpace": false,
     "hungryDelete.keepOneSpaceException": "",
     "hungryDelete.languageConfigurations": [
@@ -1824,36 +1989,46 @@
     // ** OUTLINE **
     
     "outline.collapseItems": "alwaysExpand",
-    "outline.icons": true,
-    "outline.problems.badges": true,
-    "outline.problems.colors": true,
-    "outline.problems.enabled": true,
-    "outline.showArrays": true,
-    "outline.showBooleans": true,
-    "outline.showClasses": true,
-    "outline.showConstants": true,
-    "outline.showConstructors": true,
-    "outline.showEnumMembers": true,
-    "outline.showEnums": true,
-    "outline.showEvents": true,
-    "outline.showFields": true,
-    "outline.showFiles": true,
+    
+		"outline.icons": true,
+    
+		// Disable problem badges inside Outline
+		"outline.problems.badges": false, // https://youtu.be/TCrT6DHg2io
+    
+		// Disable Colors in Problems inside Outline
+		"outline.problems.colors": false, // https://youtu.be/d4m4gALs7GQ
+    
+		// Disable Errors and Warnings from Outline
+		// [EXPERIMENTATION REQUIRED]
+		"outline.problems.enabled": false, // https://youtu.be/P5SF22bTR-g
+		
+		// Outline Visibility Parameters - https://youtu.be/P5SF22bTR-g
+    "outline.showArrays": false,
+    "outline.showBooleans": false,
+    "outline.showClasses": false,
+    "outline.showConstants": false,
+    "outline.showConstructors": false,
+    "outline.showEnumMembers": false,
+    "outline.showEnums": false,
+    "outline.showEvents": false,
+    "outline.showFields": false,
+    "outline.showFiles": false,
     "outline.showFunctions": true,
-    "outline.showInterfaces": true,
-    "outline.showKeys": true,
+    "outline.showInterfaces": false,
+    "outline.showKeys": false,
     "outline.showMethods": true,
-    "outline.showModules": true,
-    "outline.showNamespaces": true,
-    "outline.showNull": true,
-    "outline.showNumbers": true,
-    "outline.showObjects": true,
-    "outline.showOperators": true,
-    "outline.showPackages": true,
-    "outline.showProperties": true,
-    "outline.showStrings": true,
-    "outline.showStructs": true,
-    "outline.showTypeParameters": true,
-    "outline.showVariables": true,
+    "outline.showModules": false,
+    "outline.showNamespaces": false,
+    "outline.showNull": false,
+    "outline.showNumbers": false,
+    "outline.showObjects": false,
+    "outline.showOperators": false,
+    "outline.showPackages": false,
+    "outline.showProperties": false,
+    "outline.showStrings": false,
+    "outline.showStructs": false,
+    "outline.showTypeParameters": false,
+    "outline.showVariables": false,
 
     "output.smartScroll.enabled": true,
 
@@ -2291,7 +2466,10 @@
     // ** SETTING SYNC **
 
     "settingsSync.ignoredExtensions": [],
-    "settingsSync.ignoredSettings": [],
+		
+		// 
+    "settingsSync.ignoredSettings": [], //
+		
     "settingsSync.keybindingsPerPlatform": true,
     
     "simpleBrowser.focusLockIndicator.enabled": true,
@@ -2362,8 +2540,11 @@
     "terminal.integrated.environmentChangesRelaunch": true,
     "terminal.integrated.fastScrollSensitivity": 5,
     "terminal.integrated.focusAfterRun": "none",
-    "terminal.integrated.fontFamily": "",
-    "terminal.integrated.fontSize": 14,
+		
+		// 
+    "terminal.integrated.fontFamily": "monospace", // 
+    
+		"terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.fontWeightBold": "bold",
     "terminal.integrated.gpuAcceleration": "auto",
@@ -2603,7 +2784,8 @@
 
     // ** VSCord **
     "vscord.app.id": "782685898163617802",
-    "vscord.app.name": "Code",
+    "vscord.app.name": "VSCodium",
+		
     "vscord.app.privacyMode.enable": false,
     "vscord.app.whitelist": [],
     "vscord.app.whitelistEnabled": false,
@@ -2634,7 +2816,7 @@
     "vscord.status.buttons.button1.active.enabled": false,
     "vscord.status.buttons.button1.active.label": "Active Label Button 1",
     "vscord.status.buttons.button1.active.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button1.enabled": true,
+    "vscord.status.buttons.button1.enabled": false,
     "vscord.status.buttons.button1.git.active.enabled": true,
     "vscord.status.buttons.button1.git.active.label": "View Repository",
     "vscord.status.buttons.button1.git.active.url": "{git_url}",
@@ -2648,76 +2830,76 @@
     "vscord.status.buttons.button1.idle.label": "Idle Label Button 1",
     "vscord.status.buttons.button1.idle.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "vscord.status.buttons.button1.inactive.enabled": false,
-    "vscord.status.buttons.button1.inactive.label": "Inactive Label Button 1",
-    "vscord.status.buttons.button1.inactive.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.active.enabled": false,
-    "vscord.status.buttons.button2.active.label": "Active Label Button 2",
-    "vscord.status.buttons.button2.active.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.enabled": false,
-    "vscord.status.buttons.button2.git.active.enabled": false,
-    "vscord.status.buttons.button2.git.active.label": "Git Active Label Button 2",
-    "vscord.status.buttons.button2.git.active.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.git.idle.enabled": false,
-    "vscord.status.buttons.button2.git.idle.label": "Git Idle Label Button 2",
-    "vscord.status.buttons.button2.git.idle.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.git.inactive.enabled": false,
-    "vscord.status.buttons.button2.git.inactive.label": "Git Inactive Label Button 2",
-    "vscord.status.buttons.button2.git.inactive.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.idle.enabled": false,
-    "vscord.status.buttons.button2.idle.label": "Idle Label Button 2",
-    "vscord.status.buttons.button2.idle.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "vscord.status.buttons.button2.inactive.enabled": false,
-    "vscord.status.buttons.button2.inactive.label": "Inactive Label Button 2",
-    "vscord.status.buttons.button2.inactive.url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "vscord.status.buttons.button1.inactive.label": "Github Profile",
+    "vscord.status.buttons.button1.inactive.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.active.enabled": true,
+    "vscord.status.buttons.button2.active.label": "Github Profile",
+    "vscord.status.buttons.button2.active.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.enabled": true,
+    "vscord.status.buttons.button2.git.active.enabled": true,
+    "vscord.status.buttons.button2.git.active.label": "Github Profile",
+    "vscord.status.buttons.button2.git.active.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.git.idle.enabled": true,
+    "vscord.status.buttons.button2.git.idle.label": "Github Profile",
+    "vscord.status.buttons.button2.git.idle.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.git.inactive.enabled": true,
+    "vscord.status.buttons.button2.git.inactive.label": "Github Profile",
+    "vscord.status.buttons.button2.git.inactive.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.idle.enabled": true,
+    "vscord.status.buttons.button2.idle.label": "Github Profile",
+    "vscord.status.buttons.button2.idle.url": "https://github.com/gzachariadis",
+    "vscord.status.buttons.button2.inactive.enabled": true,
+    "vscord.status.buttons.button2.inactive.label": "Github Profile",
+    "vscord.status.buttons.button2.inactive.url": "https://github.com/gzachariadis",
     "vscord.status.details.enabled": true,
-    "vscord.status.details.idle.enabled": true,
-    "vscord.status.details.text.debugging": "Debugging {file_name}{file_extension}",
-    "vscord.status.details.text.editing": "In {workspace} {problems}",
-    "vscord.status.details.text.idle": "Idling",
-    "vscord.status.details.text.notInFile": "Not in a file!",
-    "vscord.status.details.text.noWorkSpaceText": "no workspace",
-    "vscord.status.details.text.viewing": "In {workspace} {problems}",
+    "vscord.status.details.idle.enabled": false,
+    "vscord.status.details.text.debugging": "Working on {file_name}{file_extension}",
+    "vscord.status.details.text.editing": "Working on {file_name}",
+    "vscord.status.details.text.idle": "Working on {workspace}",
+    "vscord.status.details.text.notInFile": "Currently Not in",
+    "vscord.status.details.text.noWorkSpaceText": "Working on {git_repo}",
+    "vscord.status.details.text.viewing": "Working on {file_name}",
     "vscord.status.idle.check": true,
     "vscord.status.idle.disconnectOnIdle": false,
     "vscord.status.idle.enabled": true,
-    "vscord.status.idle.resetElapsedTime": false,
-    "vscord.status.idle.timeout": 300,
+    "vscord.status.idle.resetElapsedTime": true,
+    "vscord.status.idle.timeout": 600,
     "vscord.status.image.large.debugging.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/debugging.png",
-    "vscord.status.image.large.debugging.text": "Debugging a {LANG} file",
+    "vscord.status.image.large.debugging.text": "",
     "vscord.status.image.large.editing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{lang}.png",
-    "vscord.status.image.large.editing.text": "Editing a {LANG} file",
-    "vscord.status.image.large.idle.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/idle-{app_id}.png",
-    "vscord.status.image.large.idle.text": "Idling",
-    "vscord.status.image.large.notInFile.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/idle-{app_id}.png",
+    "vscord.status.image.large.editing.text": "",
+    "vscord.status.image.large.idle.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
+    "vscord.status.image.large.idle.text": "",
+    "vscord.status.image.large.notInFile.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
     "vscord.status.image.large.notInFile.text": "",
     "vscord.status.image.large.viewing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{lang}.png",
-    "vscord.status.image.large.viewing.text": "Viewing a {LANG} file",
-    "vscord.status.image.small.debugging.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/debugging.png",
-    "vscord.status.image.small.debugging.text": "{app_name}",
+    "vscord.status.image.large.viewing.text": "",
+    "vscord.status.image.small.debugging.key": "https://i.ibb.co/nDFdFdM/o7v71bd02rshbc97qsckdrlseb-edc61d15bb393cc27bc7c5ecaf6263e3.png",
+    "vscord.status.image.small.debugging.text": "",
     "vscord.status.image.small.editing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{app_id}.png",
-    "vscord.status.image.small.editing.text": "{app_name}",
+    "vscord.status.image.small.editing.text": "",
     "vscord.status.image.small.idle.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/idle.png",
-    "vscord.status.image.small.idle.text": "zZz",
+    "vscord.status.image.small.idle.text": "",
     "vscord.status.image.small.notInFile.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/idle.png",
     "vscord.status.image.small.notInFile.text": "Snoozin...",
     "vscord.status.image.small.viewing.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/{app_id}.png",
-    "vscord.status.image.small.viewing.text": "{app_name}",
+    "vscord.status.image.small.viewing.text": "",
     "vscord.status.problems.countedSeverities": [
         "error",
         "warning"
     ],
-    "vscord.status.problems.enabled": true,
+    "vscord.status.problems.enabled": false,
     "vscord.status.problems.text": "- {problems_count} problems found",
     "vscord.status.resetElapsedTimePerFile": false,
     "vscord.status.showElapsedTime": true,
     "vscord.status.state.enabled": true,
     "vscord.status.state.idle.enabled": true,
-    "vscord.status.state.text.debugging": "Debugging: {workspace}",
-    "vscord.status.state.text.editing": "Working on {file_name}{file_extension}:{current_line}:{current_column}",
-    "vscord.status.state.text.idle": "",
-    "vscord.status.state.text.notInFile": "",
-    "vscord.status.state.text.noWorkspaceFound": "No workspace.",
-    "vscord.status.state.text.viewing": "Viewing {file_name}{file_extension}",
+    "vscord.status.state.text.debugging": "under {workspace} in {Lang}",
+    "vscord.status.state.text.editing": "under {workspace} in {Lang}",
+    "vscord.status.state.text.idle": "1",
+    "vscord.status.state.text.notInFile": "under {workspace}",
+    "vscord.status.state.text.noWorkspaceFound": "under {git_repo}",
+    "vscord.status.state.text.viewing": "under {workspace} in {Lang}",
 
 
     // ** WINDOW **
@@ -2725,24 +2907,38 @@
     "window.autoDetectColorScheme": false,
     "window.autoDetectHighContrast": true,
     "window.closeWhenEmpty": false,
-    "window.commandCenter": true,
-    "window.confirmBeforeClose": "never",
-    "window.customMenuBarAltFocus": true,
-    "window.density.editorTabHeight": "default",
+		
+		// Disable Window Title to be enabled as Interactive Command Pallet
+    "window.commandCenter": false, // https://www.facebook.com/CSSWeekly/videos/a-quick-overview-of-the-new-command-center-option-available-in-vs-code-v169enabl/730181864769756/
+    
+		"window.confirmBeforeClose": "never",
+		
+		// Focus Window Menu Bar with Alt (Hidden anyway, so False) 
+    "window.customMenuBarAltFocus": false,
+    
+		"window.density.editorTabHeight": "default",
     "window.dialogStyle": "native",
     "window.doubleClickIconToClose": false,
     "window.enableMenuBarMnemonics": true,
-    "window.menuBarVisibility": "classic",
-    "window.newWindowDimensions": "default",
+		
+		// Hide Window Menubar (Program Menubar at the top)
+    "window.menuBarVisibility": "hidden", // https://youtu.be/bpXmCdh-FzM
+		
+		"window.newWindowDimensions": "default",
     "window.openFilesInNewWindow": "off",
     "window.openFoldersInNewWindow": "default",
     "window.openWithoutArgumentsInNewWindow": "on",
     "window.restoreFullscreen": false,
     "window.restoreWindows": "all",
-    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}",
-    "window.titleBarStyle": "custom",
-    "window.titleSeparator": " - ",
-    "window.zoomLevel": 0,
+		
+		// Set the Title of the Window
+    "window.title": "${folderName} - ${remoteName}${seperator}${activeEditorShort}", //
+    
+		"window.titleBarStyle": "custom",
+    
+		"window.titleSeparator": " - ",
+    
+		"window.zoomLevel": 0,
 
     // ** WORKBENCH **
 
@@ -2751,7 +2947,8 @@
     // ** ACTIVITY BAR **
     
     "workbench.activityBar.iconClickBehavior": "toggle",
-    "workbench.activityBar.location": "side",
+		// Hide Activity Bar
+    "workbench.activityBar.location": "hidden", // https://youtu.be/xy9RFJ-NPHc - https://youtu.be/9ePzP0xvgoY
     
     // ** CLOUD CHANGES **
     
@@ -2801,10 +2998,17 @@
     "workbench.editor.dragToOpenWindow": true,
     "workbench.editor.editorActionsLocation": "default",
     "workbench.editor.empty.hint": "text",
-    "workbench.editor.enablePreview": true,
-    "workbench.editor.enablePreviewFromCodeNavigation": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.focusRecentEditorAfterClose": true,
+		
+		// Disable Preview Mode
+    "workbench.editor.enablePreview": false, // https://www.youtube.com/shorts/d_2I3gDofCA
+    
+		//
+		"workbench.editor.enablePreviewFromCodeNavigation": false,
+		
+		// Opening a file from quick open, will open it in Preview mode.
+    "workbench.editor.enablePreviewFromQuickOpen": true, // https://youtu.be/yLsnGyh7nL8
+    
+		"workbench.editor.focusRecentEditorAfterClose": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.historyBasedLanguageDetection": true,
     "workbench.editor.labelFormat": "default",
@@ -2817,11 +3021,19 @@
 
     // ** WORKBENCH EDITOR **
 
-    "workbench.editor.limit.enabled": false,
-    "workbench.editor.limit.excludeDirty": false,
-    "workbench.editor.limit.perEditorGroup": false,
-    "workbench.editor.limit.value": 10,
-    "workbench.editor.mouseBackForwardToNavigate": true,
+		// Enable Open Editors Limiting
+    "workbench.editor.limit.enabled": true, //
+    
+		"workbench.editor.limit.excludeDirty": false, // 
+		
+		// Apply Editor Limit on Per Editor Group basis
+    "workbench.editor.limit.perEditorGroup": true, // https://youtu.be/i2iRfgbB2zY
+		
+		// Limit to one Editor [per Group]
+    "workbench.editor.limit.value": 1, // https://youtu.be/i2iRfgbB2zY
+    
+		
+		"workbench.editor.mouseBackForwardToNavigate": true,
     "workbench.editor.navigationScope": "default",
     "workbench.editor.openPositioning": "right",
     "workbench.editor.openSideBySideDirection": "right",
@@ -2834,8 +3046,11 @@
     "workbench.editor.scrollToSwitchTabs": false,
     "workbench.editor.sharedViewState": false,
     "workbench.editor.showIcons": true,
-    "workbench.editor.showTabs": "multiple",
-    "workbench.editor.splitInGroupLayout": "horizontal",
+		
+		//
+    "workbench.editor.showTabs": "single",
+    
+		"workbench.editor.splitInGroupLayout": "horizontal",
     "workbench.editor.splitOnDragAndDrop": true,
     "workbench.editor.splitSizing": "auto",
     "workbench.editor.tabActionCloseVisibility": true,
@@ -2863,8 +3078,11 @@
 
     // ** LAYOUT CONTROL **
     
-    "workbench.layoutControl.enabled": true,
-    "workbench.layoutControl.type": "both",
+		// Disable layout control button
+    "workbench.layoutControl.enabled": false, // https://youtu.be/Tqt2Q1Mteqg
+		
+		// Layout Control - Toggle
+    "workbench.layoutControl.type": "toggles",
     
     // ** LAYOUT LIST **
     
@@ -2875,10 +3093,16 @@
     "workbench.list.keyboardNavigation": "highlight",
     "workbench.list.mouseWheelScrollSensitivity": 1,
     "workbench.list.multiSelectModifier": "ctrlCmd",
-    "workbench.list.openMode": "singleClick",
-    "workbench.list.scrollByPage": false,
-    "workbench.list.smoothScrolling": false,
-    "workbench.list.typeNavigationMode": "automatic",
+		
+		// Double Click to Open Files
+    "workbench.list.openMode": "doubleClick", // https://www.youtube.com/shorts/d_2I3gDofCA
+    
+		"workbench.list.scrollByPage": false,
+		
+		// Apply smooth scrolling to trees and lists 
+    "workbench.list.smoothScrolling": true, // https://github.com/microsoft/vscode/issues/99848
+    
+		"workbench.list.typeNavigationMode": "automatic",
     
     // ** LOCAL HISTORY **
 
@@ -2922,9 +3146,11 @@
     "workbench.settings.settingsSearchTocBehavior": "filter",
     "workbench.settings.useSplitJSON": false,
 
-    "workbench.sideBar.location": "left",
+		// Show Sidebar on the Right
+    "workbench.sideBar.location": "right", // 
 
-    "workbench.startupEditor": "welcomePage",
+		// Show Nothing on App Startup. 
+    "workbench.startupEditor": "none", //
 
     "workbench.statusBar.visible": true,
 
@@ -2935,7 +3161,10 @@
     "workbench.tree.enableStickyScroll": false,
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 8,
-    "workbench.tree.renderIndentGuides": "onHover",
+    
+		// 
+		"workbench.tree.renderIndentGuides": "always",
+		
     "workbench.tree.stickyScrollMaxItemCount": 7,
  
     "workbench.trustedDomains.promptInTrustedWorkspace": false,
@@ -2948,11 +3177,16 @@
     
     "yapf.args": [],
     "yapf.cellMagics": [],
-    "yapf.importStrategy": "fromEnvironment",
-    "yapf.interpreter": [],
+		
+		// 
+    "yapf.importStrategy": "fromEnvironment", //
+    
+		"yapf.interpreter": [],
     "yapf.path": [],
     "yapf.showDebugLog": false,
-    "yapf.showNotifications": "off",
+		
+		// Show notifications from YAPF only on Error
+    "yapf.showNotifications": "onError",
 
     // ** ZEN MODE **
 
